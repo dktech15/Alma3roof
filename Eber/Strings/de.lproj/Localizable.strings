@@ -1,0 +1,638 @@
+
+//MARK : - PUSH-NACHRICHTEN
+
+"TXT_APP_NAME" ="ALMA3ROOF";
+
+"PUSH_MESSAGE_203"="Fahrer hat Ihre Fahrtanfrage akzeptiert.";
+"PUSH_MESSAGE_200"="Fahrer ist auf dem Weg zu Ihrem Standort.";
+"PUSH_MESSAGE_204"="Fahrer ist angekommen.";
+"PUSH_MESSAGE_206"="Ihre Reise hat begonnen.";
+"PUSH_MESSAGE_209"="Ihre Reise ist abgeschlossen. Ich hoffe, Sie haben die Fahrt genossen!";
+"PUSH_MESSAGE_213"="Entschuldigung,momentan ist kein Fahrer in Ihrer Nähe verfügbar.";
+"PUSH_MESSAGE_214"="Ihre Fahrt wurde vom Fahrer storniert.";
+"PUSH_MESSAGE_240"="Ihre Reise ist beendet.";
+"PUSH_MESSAGE_217"="Fahrer leitet Fahrt ein";
+"PUSH_MESSAGE_215"="Sie wurden vom Administrator für diese Bewerbung genehmigt";
+"PUSH_MESSAGE_216"="Sie wurden vom Administrator für diese Bewerbung abgelehnt";
+"PUSH_MESSAGE_220"="An einem anderen Gerät angemeldet.";
+"PUSH_MESSAGE_231"="Firmenanfrage";
+"PUSH_MESSAGE_218"="Ihre Reise wurde vom Administrator storniert.";
+"PUSH_MESSAGE_239"="Sie haben eine neue Aufteilungszahlungsanforderung";
+"PUSH_MESSAGE_236"="Ihre Aufteilungszahlungsanfrage wurde akzeptiert";
+"PUSH_MESSAGE_237"="Ihr Antrag auf geteilte Zahlung wurde abgelehnt";
+"PUSH_MESSAGE_238"="Ihre Aufteilungszahlungsanforderung wurde entfernt.";
+"PUSH_MESSAGE_243"="Ihre Split-Payment-Reise wurde beendet";
+
+"TXT_TRIP_CANCELLED_BY_PROVIDER" ="Fahrt wurde vom Fahrer storniert";
+
+//MARK: - Gemeinsame Texte
+"TXT_YES" ="Ja";
+"TXT_NO" ="Nein";
+"TXT_CANCEL" ="Abbrechen";
+"TXT_OK" ="Okay";
+"TXT_APPLY"="Übernehmen";
+"TXT_RESET"="Zurücksetzen";
+"TXT_DELETE" ="Löschen";
+"TXT_SAVE" ="Speichern";
+"TXT_EDIT" ="Bearbeiten";
+"TXT_UPDATE"="Aktualisieren";
+"TXT_SELECT" ="Auswählen";
+"TXT_SKIP" ="Überspringen";
+"TXT_EXIT" ="Beenden";
+"TXT_DONE"="Fertig";
+"TXT_GALLERY" ="Galerie";
+"TXT_CAMERA" ="Kamera";
+"TXT_RETRY"="Wiederholen";
+"TXT_SUBMIT"="Senden";
+"TXT_ERROR"="Fehler";
+"TXT_CONFIRM" ="Bestätigen";
+"TXT_CANCEL_TRIP" ="Reise stornieren";
+"TXT_CANCELLATION_CHARGE_MESSAGE" ="Es fallen Stornierungsgebühren an";
+"TXT_CONNECTING_NEAR_BY_DRIVER" ="Verbinden mit Fahrer in der Nähe";
+"PLACE_HOLDER_ENTER_MESSAGE" ="Nachricht eingeben";
+"TXT_CHAT_WITH" ="Chat mit";
+"TXT_CHAT" ="Chatten";
+"TXT_READ" ="Lesen"; "TXT_APP_VERSION" ="App-Version";
+
+//MARK:- Dialoge
+"TXT_PUSH_ENABLE" ="**** möchte Ihnen Push-Benachrichtigungen senden";
+"MSG_PUSH_ENABLE" ="**** möchte Ihnen Push-Benachrichtigungen senden";
+"TXT_APPLY_PROMO" ="Angebot anwenden";
+"TXT_ENTER_PROMO" ="Gutscheincode eingeben";
+"MSG_PLEASE_ENTER_VALID_PROMOCODE" ="Ungültiger Aktionscode";
+"TXT_INTERNET"="Internet";
+"TXT_LOCATION_SERVICE"="Ortungsdienst";
+"MSG_INTERNET_ENABLE"="Ihre Internetverbindung scheint deaktiviert zu sein.Bitte aktivieren Sie sie.";
+"ALERT_MSG_LOCATION_SERVICE_NOT_AVAILABLE"="1. Gehen Sie zu Einstellungen > Datenschutz > Ortungsdienste. \n 2. Stellen Sie sicher, dass die Ortungsdienste aktiviert sind";
+"TXT_ATTENTION"="Achtung!";
+"TXT_ADMIN_ALERT" ="Admin-Alarm!";
+"MSG_SERVER_ERROR"="Problem beim Herunterladen von Daten vom Server, bitte starten
+Sie Ihre App neu oder versuchen Sie es erneut.";
+"MSG_UPDATE_APP"="App-Update mit Funktions- und Leistungsverbesserung verfügbar.";
+"TXT_CAMERA" ="Kamera";
+"TXT_GALLERY" ="Galerie";
+"TXT_SELECT_IMAGE" ="Bild auswählen";
+"MSG_APPROVE_ERROR"="Sie sind nicht vom Administrator genehmigt, bitte informieren Sie den Administrator.";
+"TXT_STRIPE_KEY_ERROR" ="Stripe-Schlüssel nicht vom Server erhalten";
+"TXT_LOGOUT"="Abmelden";
+"MSG_LOGOUT"="Sind Sie sicher, dass Sie sich abmelden möchten?";
+"TXT_DELETE_CARD"="Karte löschen"; "MSG_ARE_YOU_SURE"="Sind Sie sicher?";
+"TXT_CORPORATE_REQUEST" ="Unternehmensanfrage";
+"TXT_CORPORATE_REQUEST_MESSAGE" ="Möchten Sie sich mit dem Unternehmen verbinden?";
+"TXT_PAY_BY_CORPORATE" ="Möchten Sie per Firmenzahlung bezahlen?";
+"TXT_VERIFY_ACCOUNT" ="Konto bestätigen"; "TXT_YOUR_RATING" ="Ihre Bewertung";
+"TXT_NOW" ="Jetzt";
+"TXT_RENTAL" ="Vermietung";
+"TXT_SELECT_PACKAGE" ="Paket auswählen"; "TXT_DEFAULT" ="Standard";
+"TXT_RENT_NOW" ="Jetzt mieten";
+"TXT_EXTRA_DISTANCE_CHARGE" ="Zusätzliche Entfernungsgebühr";
+"TXT_EXTRA_TIME_CHARGE" ="Gebühr für zusätzliche Zeit"; "TXT_PACKAGES" ="Pakete";
+
+//MARK:- Länderdialog "TXT_SELECT_COUNTRY" ="Land auswählen"; "TXT_SEARCH_COUNTRY" ="Land suchen";
+//MARK: Dialogfeld "Reise stornieren"
+"TXT_CANCELLATION_CHARGE_APPLY" ="Stornierungsgebühren fallen an";
+"TXT_CANCEL_TRIP_REASON" ="Stornierungsgrund";
+"TXT_CANCEL_TRIP_REASON1"="Mein Client und ich konnten keine Verbindung herstellen.";
+"TXT_CANCEL_TRIP_REASON2" ="Falsche Adresse oder falscher Standort angezeigt.";
+"TXT_CANCEL_TRIP_REASON3" ="Die Eta war zu lang."; "TXT_OTHER" ="Andere";
+
+//MARK:- Intro-VC
+"TXT_PICKUP_ADDRESS_PLACE_HOLDER" ="Abholort eingeben";
+"TXT_DESTINATION_ADDRESS_PLACE_HOLDER" ="Zielort eingeben";
+"TXT_INTRO_MSG" ="Bewegen Sie sich mit der Taxi-App";
+"TXT_PHONE_NO" ="Telefonnummer."; "TXT_CLOSE" ="Schließen";
+
+//MARK:- Phone VC
+"TXT_MOBILE_MSG" ="Bitte geben Sie eine Handynummer ein.";
+
+//MARK:- Password VC
+"TXT_SIGN_IN_MSG" ="Willkommen zurück, melden Sie sich an, um fortzufahren";
+"TXT_PASSWORD" ="Passwort"; "TXT_FORGOT_PASSWORD" ="Passwort vergessen?";
+
+//MARK:- Passwort VC vergessen
+"TXT_FORGOT_PASSWORD_MSG" ="Geben Sie die E-Mail-Adresse oder Telefonnummer ein, mit der Sie sich registriert haben";
+"TXT_EMAIL" ="E-Mail";
+
+//MARK:- Neues Passwort VC "TXT_NEW_PASSWORD_MSG" ="Neues Passwort";
+//MARK:- VC registrieren
+"TXT_REGISTER_MSG" ="Bestätigen Sie Ihre Informationen";
+"TXT_FIRST_NAME" ="Vorname";
+"TXT_LAST_NAME" ="Nachname";
+"TXT_CONDITIONING_TEXT" ="Indem ich fortfahre, bestätige ich, dass ich die gelesen habe und ihnen zustimme";
+"TXT_PRIVACY_POLICY" ="Datenschutzrichtlinie";
+"TXT_TERMS_CONDITIONS"="Allgemeine Geschäftsbedingungen";
+"TXT_AND" ="und";
+//MARK:- Empfehlungs-VC
+"TXT_ENTER_REFERRAL_CODE" ="Empfehlungscode eingeben";
+"TXT_REFERRAL_ERROR_MSG" = "";
+"TXT_REFERRAL_MSG" ="Sie
+können hier einen von Ihrem Freund bereitgestellten Empfehlungscode hinzufügen, um kostenlose Credits zu erhalten. Wenn Sie keinen haben odernicht
+einfügen möchten, klicken Sie einfach unten auf die Schaltfläche Überspringen.";
+
+//MARK:- OTP VC
+"TXT_OTP_MSG" ="Geben Sie den 6-stelligen Code ein, der an Sie gesendet wurde";
+"TXT_DID_YOU_ENTER_CORRECT_MOBILE_NUMBER" ="Haben Sie die richtige Handynummer eingegeben?";
+"TXT_ENTER_OTP" ="OTP eingeben";
+"TXT_RESEND_CODE" ="Code erneut senden";
+"TXT_RESEND_CODE_IN" ="Code erneut senden in ";
+"TXT_EDIT_MY_DETAIL" ="Meine Details bearbeiten";
+
+//MARK:- MAPVC
+"TXT_WHERE_TO_GO" ="Wohin?";
+"TXT_NOTIFICATION" ="BenachrichtigungBenachrichtigung";
+"TXT_PICKUP_ADDRESS" ="Abholadresse";
+"TXT_DESTINATION_ADDRESS" ="Zieladresse";
+"TXT_NO_SERVICE_AVAILABLE_IN_THIS_AREA" ="Kein Dienst in diesem Bereich verfügbar.";
+"TXT_SORRY" ="Entschuldigung!";
+"TXT_ADD_PAYMENT" ="Zahlung hinzufügen";
+"TXT_ETA" ="ETA";
+"TXT_FARE_ESTIMATE" ="Geschätzter Fahrpreis.";
+"TXT_CASH" ="Bargeld"; "TXT_CARD" ="Karte";
+"TXT_ACCESSIBILITY" ="Barrierefreiheitspräferenz";
+"TXT_REQUEST_PROVIDER_GENDER" ="Welchen Fahrer möchten Sie anfordern?";
+"TXT_MALE" ="Männlich";
+"TXT_FEMALE" ="Weiblich";
+"TXT_SELECT_LANGUAGE" ="Sprache auswählen";
+"TXT_HOTSPOT" ="Hotspot";
+"TXT_BABY_SEAT" ="Kindersitz";
+"TXT_HANDICAP" ="Behinderung";
+"TXT_SET_LOCATION_ON_MAP" ="Standort auf der Karte festlegen";
+"TXT_ADD_DESTINATION_LATER" ="Ziel später hinzufügen";
+"TXT_PERSON" ="Person";
+"TXT_SURGE_PRICE_MESSAGE" ="Bei Bedarf ändern sich die Außentarife im Laufe der Zeit, um das Fahrzeug verfügbar zu halten";
+"TXT_FIXED_RATE_AVAILABLE" ="Festpreis verfügbar";
+"MSG_FIXED_RATE_DIALOG" ="Möchten Sie zum Festpreis fahren, andernfalls zum Tarifpreis.";
+"TXT_USER_WALLET" ="Brieftasche verwenden";
+
+//MARK:- Fare Estimate
+"TXT_BASE_FARE" ="Base Fare";
+"TXT_DISTANCE_FARE" ="Entfernungstarif";
+"TXT_TIME_FARE" ="Zeittarif";
+"TXT_MAX_SIZE"="Maximale Größe";
+"TXT_TAX_FARE" ="Steuer";
+"TXT_CANCELLATION_FARE" ="Stornierungsgebühr:";
+"TXT_FARE_ESTIMATE_MSG" ="Dies ist nur eine geschätzte Zeit. Tatsächlich Der Fahrpreis kann je nach Verkehr oder Rabatt leicht variieren.";
+"TXT_FARE_ESTIMATE_MSG_FIXED_RATE" ="Dies ist nur eine geschätzte Zeit.";
+"TXT_FIXED_RATE" ="Fahrt zum Festpreis";
+"TXT_TIME" ="Zeit";
+"TXT_DISTANCE" ="Entfernung ";
+"TXT_SURGE_FARE" ="Stoßpreis";
+"TXT_MIN_FARE" ="Min. Fahrpreis";
+
+//MARK:- MenuVC
+"TXT_PROFILE" ="Profil";
+"TXT_PAYMENTS" ="Zahlung";
+"TXT_MY_BOOKINGS" ="Meine Buchungen";
+"TXT_HISTORY" ="Verlauf";
+"TXT_REFERRAL" ="Empfehlung";
+"TXT_CONTACT_US" ="Kontaktieren Sie uns";
+"TXT_DOCUMENTS" ="Dokumente";
+
+//MARK:- Kontaktieren Sie uns VC
+"TXT_CONTACT_US_MSG" = "Danke, dass Sie sich für die Taxi-App entschieden haben";
+
+//MARK:- Einstellung VC
+"TXT_SETTINGS" ="Einstellungen";
+"TXT_LANGUAGE" ="Sprache";
+"TXT_EMERGENCY_CONTACTS" ="Notfallkontakte";
+"TXT_CONTACT_LIMIT_MSG" ="Sie können 5 Kontakte hinzufügen";
+"TXT_SOUND_ALERT" ="Akustische Warnung";
+"TXT_SOUND_ALERT_MESSAGE" = "Ton abspielen, wenn der Fahrer seinen Status während der Fahrt geändert hat.";
+"TXT_ARRIVED_ALERT" ="Fahrer angekommen Alarm";
+"TXT_ARRIVED_ALERT_MESSAGE" ="Soundwiedergabe, wenn der Fahrer angekommen ist.";
+"TXT_PUSH_NOTIFICATION" ="Push-Benachrichtigung";
+"TXT_PUSH_NOTIFICATION_SOUND_MESSAGE" ="Tonwiedergabe für Push-Benachrichtigungen.";
+
+//MARK:- Profil VC "TXT_ADDRESS" ="Adresse";
+"TXT_CHANGE" ="Ändern";
+"TXT_NEW_PASSWORD" ="Neues Passwort";
+"TXT_ADD" ="Hinzufügen";
+
+//MARK:- History VC
+"TXT_SELECT_FROM_DATE" ="Vom Datum auswählen";
+"TXT_SELECT_TO_DATE" ="Bitte bis Datum auswählen.";
+"TXT_FROM" ="Von";
+"TXT_TO" ="An";
+"TXT_YESTERDAY" ="Gestern";
+"TXT_TODAY" ="Heute";
+"TXT_WARNING" ="Fehler";
+"MSG_INVALID_DATE_WARNING" ="Bitte wählen Sie zuerst das Datum aus.";
+"TXT_INVOICE" ="Rechnung";
+"TXT_CANCELLED_TRIP" ="Stornierte Reise";
+"TXT_TRIP_ID" ="Trip-ID.";
+
+//MARK:- Zahlungen
+"TXT_ADD_CARD" ="Neue Karte hinzufügen";
+"TXT_CREDIT_CARD" ="Kreditkarte";
+"TXT_PAYMENT_MESSAGE" ="Fahren Sie mit ALMA3ROOF und sammeln Sie Credits, die Sie bei Ihrer nächsten Fahrt einlösen können.";
+"TXT_NO_CREDIT_CARD" ="Keine Kreditkarte hinzugefügt";
+"TXT_CARDS" ="Karten";
+"TXT_CVV" ="cvv";
+"TXT_MM_JJ" ="mm/jj";
+"TXT_CREDIT_CARD_NUMBER" ="Kreditkartennummer";
+"TXT_CARD_HOLDER_NAME" ="Name des Karteninhabers";
+"TXT_CARD_MSG" ="Nur VISA und Mastercard werden akzeptiert";
+
+//MARK:- Empfehlung teilen
+"TXT_SHARE_REFERRAL_CODE" ="Empfehlungscode teilen";
+"TXT_SHARE_REFERRAL_MSG" ="Teilen Sie Ihren Empfehlungscode mit Freunden und erhalten Sie zusätzliche Empfehlungsgutschriften.";
+"TXT_YOUR_REFERRAL_CODE" ="Ihr Empfehlungscode";
+"TXT_YOUR_REFERRAL_CREDIT" ="Ihr Empfehlungsguthaben";
+"MSG_SHARE_REFERRAL" = "**** meinen Empfehlungscode verwenden :";
+
+//MARK:- Trip VC
+"TXT_HAVE_PROMO_CODE" ="Promo-Code haben?";
+"TXT_CAR_ID" ="Auto-ID";
+"TXT_PLATE_NO" ="Kennzeichen Nr.";
+"TXT_TRIP_NO" ="Fahrt Nr.";
+"TXT_CALL" ="Anruf";
+"TXT_CANCEL_TRIP" ="Reise stornieren";
+"TXT_SOS" ="SOS";
+"TXT_PROMO_APPLIED" ="Promo angewendet";
+"TXT_TOTAL_TIME" ="Gesamtzeit";
+"TXT_TOTAL_DISTANCE" ="Gesamtstrecke";
+"TXT_SEND" ="Senden";
+"TXT_WAITING_TIME_START_AFTER" ="Wartezeit beginnt nach";
+"TXT_TOTAL_WAITING_TIME" ="Gesamtwartezeit";
+"TRIP_STATUS_ACCEPTED" ="Fahrer hat Ihre Fahrt akzeptiert";
+"TRIP_STATUS_COMING" ="Fahrer ist auf dem Weg zu Ihrem Standort";
+"TRIP_STATUS_ARRIVED" ="Fahrer ist an Ihrem Standort angekommen";
+"TRIP_STATUS_STARTED" ="Ihre Reise hat begonnen";
+"TRIP_STATUS_END" ="Ihre Reise wurde abgeschlossen";
+"TRIP_STATUS_COMPLETED" = "";
+
+//MARK:- Rechnung VC "TXT_FIXED_FARE_TRIP" ="Fahrt zum Festpreis";
+"TXT_AIRPORT_TRIP" ="Flughafenfahrt";
+"TXT_ZONE_TRIP" ="Zonenfahrt";
+"TXT_CITY_TRIP" ="Städtereise";
+"TXT_FIXED_RATE" ="Festpreis";
+"TXT_TIP" ="Tipp";
+"TXT_TOLL" ="Mautbetrag";
+"TXT_DISTANCE_PRICE" ="Entfernung";
+"TXT_TIME_PRICE" ="Zeit";
+"TXT_WAIT_TIME_COST" ="Wartezeit";
+"TXT_USER_CITY_TAX" ="Stadtsteuer des Benutzers";
+"TXT_PROVIDER_CITY_TAX" ="Stadtsteuer für Fahrer";
+"TXT_PROVIDER_MISCELLANEOUS_TAX" ="Sonstige Gebühr für Fahrer";
+"TXT_USER_MISCELLANEOUS_TAX" ="Verschiedene Benutzergebühr";
+"TXT_PAID_BY_CASH" ="Barzahlung";
+"TXT_PAID_BY_CARD" ="Mit Karte bezahlt";
+"TXT_PAID_BY_APPLE_PAY" ="Bezahlt mit Apple Pay";
+"TXT_PAID_BY_WALLET" ="In Wallet setzen";
+"TXT_REMAINING_TO_PAY" ="Rest";
+"TXT_TOTAL" ="Gesamt";
+"TXT_DISCOUNT" ="Rabatt";
+"TXT_PROMO_BONUS" ="Aktionsbonus";
+"TXT_REFERRAL_BONUS" ="Empfehlungsbonus";
+"TXT_TAX" ="Steuer:";
+"TXT_BASE_PRICE" ="Grundpreis";
+"TXT_SURGE_PRICE" ="Stoßpreis";
+"TXT_WALLET" ="Brieftasche";
+"TXT_MIN_FARE" ="Mindesttarif:";
+"TXT_APPLIED" ="Angewandt";
+"TXT_COMMENT_PLACEHOLDER" ="Schreiben Sie über Ihre Erfahrungen. Wir freuen uns immer, von Ihnen zu hören.";
+"TXT_SERVICE_PRICE" ="Servicepreis";
+"TXT_PAYMENT_FAILED" ="Zahlung fehlgeschlagen";
+"MSG_PAYMENT_FAILED" ="Ihre Zahlung ist aufgrund einer falschen Karte oder Authentifizierung fehlgeschlagen. Bitte zahlen Sie erneut oder fügen Sie eine neue Karte hinzu.";
+"TXT_PAY_AGAIN" ="Erneut bezahlen";
+"TXT_COMMENTS" ="Kommentar";
+
+//MARK:- Validierungsnachricht
+"VALIDATION_MSG_PLEASE_SELECT_VALID_PACKAGE" ="Bitte gültiges Paket auswählen";
+"VALIDATION_MSG_ENTER_PHONE_NUMBER" ="Bitte geben Sie eine Handynummer ein.";
+"VALIDATION_MSG_INVALID_PHONE_NUMBER" ="Bitte geben Sie eine gültige Handynummer ein.";
+"VALIDATION_MSG_INVALID_PASSWORD" ="Bitte geben Sie ein Passwort mit mehr als 6 Zeichen ein.";
+"VALIDATION_MSG_ENTER_PASSWORD" ="Bitte geben Sie ein Passwort ein.";
+"VALIDATION_MSG_INVALID_EMAIL" ="Bitte geben Sie eine gültige E-Mail-Adresse ein.";
+"VALIDATION_MSG_ENTER_EMAIL" ="Bitte geben Sie eine E-Mail-Adresse ein.";
+"VALIDATION_MSG_ENTER_NAME" ="Bitte Namen eingeben.";
+"VALIDATION_MSG_INVALID_REFERRAL_CODE" ="Bitte geben Sie einen gültigen Empfehlungscode ein";
+
+"VALIDATION_MSG_UNABLE_TO_CALL" ="Anruf nicht möglich";
+"VALIDATION_MSG_UNABLE_TO_MAIL" ="Mail kann nicht gesendetwerden";
+"TXT_PLEASE_SELECT_CARD_EXPIRY_DATE" ="Ablaufdatum auswählen";
+"VALIDATION_MSG_ENTER_VALID_CREDIT_CARD_NUMBER" ="Bitte geben Sie eine gültige Kartennummer ein."; "VALIDATION_MSG_ENTER_VALID_CVV_NUMBER" ="Bitte geben Sie einen gültigen CVV-Code ein.";
+"VALIDATION_MSG_INVALID_CARD" ="Ihre Karte ist ungültig";
+"VALIDATION_MSG_NO_CARD_SELECTED" ="Keine Karte ausgewählt";
+"VALIDATION_MSG_INVALID_AMOUNT" ="Bitte geben Sie einen gültigen Betrag ein.";
+"VALIDATION_MSG_INVALID_REASON" ="Bitte geben Sie einen triftigen Grund an.";
+"VALIDATION_MSG_INVALID_LOCATION" ="Keine Karte ausgewählt";
+"VALIDATION_MSG_ENTER_CARD_HOLDER_NAME_FIRST" ="Bitte geben Sie den Namen des Karteninhabers ein.";
+"VALIDATION_MSG_NO_OTHER_PAYMENT_MODE_AVAILABLE"="Keine andere Zahlungsmethode in dieser Stadt verfügbar.";
+"VALIDATION_MSG_RATE_PROVIDER" ="Bitte geben Sie mindestens eine Rate an";
+"VALIDATION_MSG_HOME_ADDRESS_NOT_AVAILABLE" ="Tippen, um Heimatadresse hinzuzufügen";
+"VALIDATION_MSG_WORK_ADDRESS_NOT_AVAILABLE" ="Tippen, um Arbeitsadresse hinzuzufügen";
+"VALIDATION_MSG_SELECT_DESTINATION_ADDRESS_FIRST"="Sie müssen zuerst eine Zieladresse hinzufügen.";
+"VALIDATION_MSG_PLEASE_SELECT_DATE_FIRST" ="Bitte wählen Sie zuerst das Datum aus.";
+"VALIDATION_MSG_PLEASE_ENTER_DOCUMENT_ID" ="Bitte geben Sie den eindeutigen Code des Dokuments ein.";
+"VALIDATION_MSG_PLEASE_ENTER_DOCUMENT_EXP_DATE" ="Bitte geben Sie ein gültiges Ablaufdatum für das Dokument ein.";
+"VALIDATION_MSG_PLEASE_SELECT_DOCUMENT_IMAGE" ="Bitte Dokumentbild auswählen.";
+"VALIDATION_MSG_ADD_CARD_FIRST" ="Bitte fügen Sie eine Kreditkarte hinzu.";
+"VALIDATION_MSG_VALID_AMOUNT" ="Bitte geben Sie einen gültigen Betrag ein.";
+"VALIDATION_MSG_PLEASE_ENTER_DESTINATION_FIRST" ="Bitte wählen Sie zuerst die Zieladresse aus, um ETA zu teilen";
+
+//MARK:- Nachrichtencode
+"MSG_CODE_0" ="Nachrichtencode nicht gesetzt";
+"MSG_CODE_1" ="Sie wurden erfolgreich registriert.";
+"MSG_CODE_2" ="Sie wurden erfolgreich registriert.";
+"MSG_CODE_18" ="Sie wurden erfolgreich angemeldet.";
+"MSG_CODE_4" ="Ihr Profil wurde erfolgreich aktualisiert.";
+"MSG_CODE_20" ="Sie wurden erfolgreich abgemeldet.";
+"MSG_CODE_6" ="Ihre Karte wurde erfolgreich hinzugefügt.";
+"MSG_CODE_7" ="Alle Karten erfolgreich erhalten.";
+"MSG_CODE_8" ="Ihre Karte wurde erfolgreich gelöscht.";
+"MSG_CODE_9" ="Ihre Reiseanfrage wurde bestätigt.";
+"MSG_CODE_10" ="Benutzer erhält Reisestatus.";
+"MSG_CODE_11" ="Ihre Reise wurde erfolgreich storniert.";
+"MSG_CODE_12" ="Ihr Empfehlungscode wurde erfolgreich angewendet.";
+"MSG_CODE_13" ="Empfehlung übersprungen.";
+
+"MSG_CODE_14" ="Verlauf erfolgreich erhalten.";
+"MSG_CODE_15" ="Verlaufsdetail erfolgreich abgerufen.";
+"MSG_CODE_16" ="Benutzer hat Bewertung erfolgreich abgegeben.";
+"MSG_CODE_19" ="Ihr Profil wurde erfolgreich aktualisiert.";
+"MSG_CODE_33"="Holen Sie sich Ihre Details.";
+"MSG_CODE_35" ="Sie erhalten eine Fahrerliste in der Nähe.";
+"MSG_CODE_36" ="Sie erhalten eine Fahrpreisschätzung.";
+"MSG_CODE_37" ="Ihr Promo-Code wurde erfolgreich angewendet.";
+"MSG_CODE_46" ="Karte deselektiert.";
+"MSG_CODE_45" ="Holen Sie sich Ihre ausgewählte Karte.";
+"MSG_CODE_43" ="Erhalten Sie Ihre zukünftigen Reisen erfolgreich.";
+"MSG_CODE_44" ="Ihre Reise wurde erfolgreich gebucht.";
+"MSG_CODE_47" ="Dokumentliste erfolgreich erhalten.";
+"MSG_CODE_48" ="Ihr Dokument wurde erfolgreich hochgeladen.";
+"MSG_CODE_49" ="Ihr Dokument wurde erfolgreich aktualisiert.";
+"MSG_CODE_42" ="Ihre Reise wurde erfolgreich gebucht.";
+"MSG_CODE_64" ="Ihr Ziel wurde erfolgreich aktualisiert.";
+"MSG_CODE_62" ="Ihre Zahlungsmethode wurde erfolgreich geändert.";
+"MSG_CODE_52" ="Geräte-Token aktualisieren";
+"MSG_CODE_55" ="Sie erhalten Ihr Empfehlungsguthaben erfolgreich.";
+"MSG_CODE_58" ="Ihre geplante Buchung wurde erfolgreich storniert.";
+"MSG_CODE_63" ="Fahrzeugliste erfolgreich erhalten.";
+"MSG_CODE_91" ="Guthabenbetrag erfolgreich hinzugefügt";
+"MSG_CODE_77" ="E-Mail erfolgreich versendet.";
+"MSG_CODE_81" ="Passwort erfolgreich zurückgesetzt";
+"MSG_CODE_103" ="Unternehmensanfrage erfolgreich angenommen.";
+"MSG_CODE_104" ="Unternehmensanfrage erfolgreich abgelehnt.";
+"MSG_CODE_72" ="SOS-Nachricht erfolgreich gesendet.";
+"MSG_CODE_106" ="Favoritenfahrer erfolgreich hinzugefügt.";
+"MSG_CODE_107" ="Favoritentreiber erfolgreich entfernen.";
+
+//MARK:- Fehlercodes
+"ERROR_CODE_401" ="Diese E-Mail-ID ist bereits registriert.";
+"ERROR_CODE_402" ="Eindeutige soziale ID erforderlich oder Passwort sollte Null sein";
+"ERROR_CODE_403" ="Sie sind kein registrierter Benutzer. Bitte registrieren Sie sich zuerst.";
+"ERROR_CODE_448" ="Sie sind nicht bei diesem sozialen Netzwerk registriert.";
+"ERROR_CODE_404" ="Bitte geben Sie ein altes Passwort ein.";
+"ERROR_CODE_405" ="Bitte geben Sie einen gültigen Zahlungs-Token ein.";
+"ERROR_CODE_406" ="Entschuldigung, es gibt keinen Treiber für den von Ihnen ausgewählten Dienst.";
+"ERROR_CODE_407" ="Keine Fahrt.";
+"ERROR_CODE_408" ="Ihre Reise wurde bereits storniert.";
+"ERROR_CODE_409" ="Bis jetzt wurde noch
+keine Fahrt gemacht.";
+"ERROR_CODE_410" ="Fahrdetails des Benutzers nicht gefunden.";
+"ERROR_CODE_411" ="Ihre Reise ist noch nicht abgeschlossen.";
+"ERROR_CODE_415" ="Entschuldigung, unser Service ist in diesem Bereich nicht verfügbar.";
+"ERROR_CODE_423" ="Entschuldigung, Sie können Ihren Empfehlungscode nicht überspringen.";
+"ERROR_CODE_433" ="Bitte geben Sie ein gültiges Passwortein.";
+"ERROR_CODE_434" ="Bitte geben Sie ein gültiges Passwort ein.";
+"ERROR_CODE_428" ="Kein Treiber für ausgewählten Diensttyp in Ihrem Gebiet.";
+"ERROR_CODE_421" ="Kein Diensttyp gefunden.";
+"ERROR_CODE_442" ="Karte nicht gefunden.";
+"ERROR_CODE_441" ="Karte nicht gefunden.";
+"ERROR_CODE_445" ="Ziel nicht festgelegt.";
+"ERROR_CODE_435" ="Bitte fügen Sie zuerst eine Kreditkarte hinzu.";
+"ERROR_CODE_436" ="Entschuldigung, kein Aktionscode verfügbar.";
+"ERROR_CODE_437" ="Reise nicht gefunden.";
+"ERROR_CODE_438"="Nicht übereinstimmende Dokument-ID.";
+"ERROR_CODE_439"="Keine zukünftige Fahrt oder nicht übereinstimmende ID.";
+"ERROR_CODE_440"="Karten-ID nicht übereinstimmen.";
+"ERROR_CODE_422" ="Sie haben den Empfehlungscode bereits angewendet.";
+"ERROR_CODE_426" ="Fahrerdetails werden nicht abgerufen. ";
+"ERROR_CODE_427" ="Ihre Daten werden nicht abgerufen.";
+"ERROR_CODE_429" ="Kein Diensttyp gefunden.";
+"ERROR_CODE_424" ="Leider ist Ihr Abmeldeversuch fehlgeschlagen.";
+"ERROR_CODE_446" ="Bitte geben Sie ein gültiges Passwort ein. ";
+"ERROR_CODE_451" ="Ungültiger Token.";
+"ERROR_CODE_454" ="Nicht übereinstimmende Fahrplan-ID";
+"ERROR_CODE_456" ="Sie sind bereits mit dieser Handynummer registriert.";
+"ERROR_CODE_464" ="Ihre letzte Zahlung steht nochaus. Bitte kontaktieren Sie unseren Administrator.";
+"ERROR_CO DE_1001" ="Wirmachen in diesem Land keine Geschäfte.";
+"ERROR_CODE_1002" ="Wir machen in dieser Stadt keine Geschäfte.";
+"ERROR_CODE_468" ="Sie können keine weiteren Kontakte hinzufügen";
+"ERROR_CODE_541" ="Bitte geben Sie einen gültigen Aktionscode ein.";
+"ERROR_CODE_542" ="Promo-Code wurde bereits verwendet.";
+"ERROR_CODE_544" ="Promo-Funktion ist für den aktuellen Zahlungsmodus nicht aktiv.";
+"ERROR_CODE_543" ="Promo-Code in Ihrem Land oder Ihrer Stadt nicht aktiv";
+"ERROR_CODE_545" ="Promo-Code ist abgelaufen oder ungültig";
+"ERROR_CODE_701" ="Hinzufügen des Wallet-Betrags fehlgeschlagen.";
+"ERROR_CODE_702" ="Geldbörsenstatus ändern fehlgeschlagen.";
+"ERROR_CODE_801" ="E-Mail-Adresse ist nicht registriert.";
+"ERROR_CODE_804" ="Aktualisierung des Gerätetokens fehlgeschlagen.";
+"ERROR_CODE_803" ="Geplante Fahrt nicht gefunden.";
+"ERROR_CODE_447" ="Ihr Passwort ist falsch. Bitte versuchen Sie es erneut.";
+"ERROR_CODE_471" ="Fehler beim Hinzufügen eines Notfallkontakts.";
+"ERROR_CODE_472" ="Fehler beim Aktualisieren eines Notfallkontakts.";
+"ERROR_CODE_473" ="Fehler beim Löschen eines Notfallkontakts.";
+"ERROR_CODE_474" ="Benutzerdetail nicht gefunden.";
+"ERROR_CODE_475" ="Fehler beim Löschen der Karte.";
+"ERROR_CODE_477" ="Kartenauswahl fehlgeschlagen.";
+"ERROR_CODE_478" ="Liste der Benutzerdokumente nicht gefunden.";
+"ERROR_CODE_481" ="Reiseservice nicht gefunden.";
+"ERROR_CODE_482" ="Benutzerdokument nicht gefunden.";
+"ERROR_CODE_483" ="Benutzer- oder Fahrerdetails nicht gefunden.";
+"ERROR_CODE_484" ="Upload des Benutzerprofils fehlgeschlagen.";
+"ERROR_CODE_485" ="Zahlung fehlgeschlagen.";
+"ERROR_CODE_487" ="Antrag auf Empfehlung fehlgeschlagen.";
+"ERROR_CODE_491" ="Reise stornieren fehlgeschlagen.";
+"ERROR_CODE_493" ="Hochladen des Reisestatus fehlgeschlagen.";
+"ERROR_CODE_494" ="Ziel-Upload fehlgeschlagen.";
+"ERROR_CODE_495" ="Ermittlung des Fahrers in der Nähe fehlgeschlagen.";
+"ERROR_CODE_496" ="Fahrpreisschätzung abrufen fehlgeschlagen.";
+"ERROR_CODE_897" ="Das Empfehlungsland Ihres Freundes stimmt nicht mit Ihrem überein.";
+"ERROR_CODE_301" ="Ihre Karte wurde von der Bank wegen unzureichender Deckung abgelehnt. Bitte fügen Sie eine neue Karte hinzu.";
+"ERROR_CODE_811" ="Sprache nicht gefunden.";
+"ERROR_CODE_812" ="Reise erstellen fehlgeschlagen";
+"ERROR_CODE_497" ="Notfallkontakt bereits hinzugefügt.";
+"ERROR_CODE_467" ="Notfallkontakt nicht gefunden. Bitte fügen Sie einen Kontakt hinzu.";
+"ERROR_CODE_470" ="Bereits beim Dispatcher registriert.";
+"ERROR_CODE_453" ="Keine Fahrt.";
+"ERROR_CODE_459" ="Leider konnten wir Ihre Karte nicht hinzufügen. Bitte versuchen Sie es erneut.";
+"ERROR_CODE_420" ="Ihre Reise ist noch nicht zu Ende.";
+"ERROR_CODE_808" ="Bereits bei sozialem Konto registriert";
+"ERROR_CODE_815" ="Benutzerprüfung fehlgeschlagen";
+"ERROR_CODE_809" ="Wallet-Verlauf nicht gefunden.";
+"ERROR_CODE_1003" ="Wir sind in diesem Bereich nicht geschäftlich tätig.";
+"ERROR_CODE_1002" ="Wir sind in dieser Stadt nicht tätig.";
+"ERROR_CODE_995" ="Fahrt läuft bereits";
+"ERROR_CODE_991" ="Etwas ist schief gelaufen";
+"ERROR_CODE_0" ="";
+
+//MARK: - HTTP ERROR CODE
+"HTTP_ERROR_CODE_404" ="URL nicht gefunden. Bitte überprüfen Sie Ihre Internetverbindung";
+"HTTP_ERROR_CODE_502" ="Bad Gateway";
+"HTTP_ERROR_CODE_504" ="Gateway- Zeitüberschreitung";
+"HTTP_ERROR_CODE_503" ="Dienst nicht verfügbar";
+"HTTP_ERROR_CODE_500" ="Interner Serverfehler";
+"HTTP_ERROR_CODE_408" ="Zeitüberschreitung bei Anfrage";
+"HTTP_ERROR_CODE_413" ="Entität zu groß anfordern";
+"HTTP_ERROR_CODE_0" ="";
+"TXT_ON_GOING_TRIP" ="Laufende Fahrt";
+"TXT_UP_COMING_TRIP" ="Anstehende Reisen";
+
+//Wallet-Bildschirm "TXT_WALLET_HISTORY" ="Wallet-Verlauf";
+"TXT_ID" ="ID";
+"TXT_WALLET_AMOUNT" ="Guthabenbetrag";
+"TXT_TOTAL_WALLET_AMOUNT" ="Gesamtbetrag der Brieftasche";
+"TXT_WALLET_HISTORY_DETAIL" ="Wallet-Verlauf";
+"TXT_SEND_MONEY" ="Send Money";
+"WALLET_STATUS_ADDED_BY_ADMIN" ="Vom Administrator hinzugefügt";
+"WALLET_STATUS_ADDED_BY_CARD" ="Von Karte hinzugefügt";
+"WALLET_STATUS_ADDED_BY_REFERRAL" ="Durch Empfehlung hinzugefügt";
+"WALLET_STATUS_ORDER_CHARGED" ="In Reise verwendeter Betrag";
+"WALLET_STATUS_ORDER_REFUND" ="Reise erstattet";
+"WALLET_STATUS_ORDER_PROFIT" ="Reisegewinn";
+"WALLET_STATUS_ORDER_CANCELLATION_CHARGE" ="Reisestornierungsgebühr";
+
+"WALLET_STATUS_WALLET_REQUEST_CHARGE" ="Wallet-Anforderungsgebühr";
+"TXT_AMOUNT_DEDUCTED" ="Abgezogener Betrag";
+"TXT_AMOUNT_ADDED" ="Hinzugefügter Betrag";
+
+//MARK:- Dokument VC
+"TXT_MANDATORY_FIELDS" ="* obligatorisches Dokument";
+"TXT_ENTER_ID_NUMBER" ="ID-Nummer eingeben";
+"TXT_ENTER_EXP_DATE" ="Verfallsdatum auswählen";
+"TXT_ID_NUMBER" ="ID-Nummer :";
+"TXT_EXP_DATE" ="Verfallsdatum:";
+"TXT_SHARE" ="Teilen";
+"MSG_SHARE_ETA"="Icherreiche %@ mit %@ in %@ min";
+"VALIDATION_MSG_ENTER_VALID_OTP"="Gültigen otp eingeben";
+"MSG_PLEASE_ENTER_VALID_PASSWORD"="Passwortlänge sollte länger als 6 Zeichen sein.";
+"TXT_SELECT_DATE" ="Datum auswählen";
+"TXT_SCHEDULE_TRIP" ="Fahrt planen";
+
+//MARK String Hinzugefügt am 23.02.2019
+"TXT_CURRENT_PASSWORD" ="Aktuelles Passwort";
+"TXT_TAP_TO_ADD_WORK_ADDRESS" ="Tippen, um Arbeitsadresse hinzuzufügen";
+"TXT_TAP_TO_ADD_HOME_ADDRESS" ="Tippen, um Heimatadresse hinzuzufügen";
+"TXT_APP_PROMOTION_DESCRIPTION" ="Bestellen Sie Essen, Lebensmittel, Blumen?\nE-Lieferung ist eine On-Demand-Lieferungsanwendung von uns.\nBesonders für den gesamten Lieferbereich des Marktes, angefangen von Lebensmitteln, Wasserflaschen, Lebensmittellieferungen.";
+"TXT_GET_APP" ="App abrufen";
+"TXT_MENU" ="Menü";
+"VALIDATION_MSG_PICKUP_ADDRESS_NOT_AVAILABLE" ="Bitte wählen Sie zuerst die Abholadresse aus.";
+"VALIDATION_MSG_ENTER_VALID_EXPIRY_DATE" ="Wählen Sie ein gültiges Ablaufdatum.";
+"TXT_HISTORY_NOT_FOUND" ="Verlauf nicht verfügbar";
+"TXT_EMPTY_HISTORY" ="Verlauf";
+"TXT_EMPTY_HISTORY_MSG" ="Kein Verlauf zum Anzeigen.";
+"ERROR_CODE_461" ="Ungültiger Empfehlungscode.";
+"ERROR_CODE_898" ="Empfehlungscode abgelaufen";
+"ERROR_CODE_899" ="Benutzer nicht vom Administrator genehmigt.";
+"TXT_FAVOURITE" ="Favorit";
+"TXT_FAVOURITE_DRIVER" ="Lieblingsfahrer";
+"TXT_NO_FAVOURITE_DRIVER" ="Kein Lieblingsfahrer";
+"TXT_ADD_DRIVER" ="Treiber hinzufügen";
+"TXT_ADD_FAVOURITE_DRIVER" ="Favoritenfahrer hinzufügen";
+"TXT_SEARCH" ="Suchen";
+"TXT_NO_DRIVER" ="Kein Treiber gefunden";
+"MSG_PROMO_REMOVE_MESSAGE" ="Ihre Aktion kann nach Änderung des Zahlungsmodus ungültig werden";
+"TITLE_PROMO_REMOVE_MESSAGE" ="Promo-Alarm";
+"ERROR_CODE_992" ="Parameter fehlt";
+"TXT_CHANGE_LANGUAGE" ="Sprache ändern";
+"TXT_SEARCH_DRIVER" ="E-Mail oder Telefon eingeben";
+"TXT_NO_BOOKING" ="Meine Buchungen";
+"TRIP_STATUS_WAITING_FOR_ACCEPT" ="Warten auf Akzeptieren";
+"TXT_RIDE_NOW" ="Jetzt fahren";
+"TXT_SELECT_COUNTRY" ="Select country";
+"TXT_GIVE_TIP_TO_DRIVER"="Geben Sie Ihrem Fahrer Trinkgeld";
+"TXT_SEARCH_DRIVER_NOTE"="Hinweis: Fahrer per E-Mail oder Telefonnummer suchen (keinen Ländercode hinzufügen)";
+"TXT_APPLE_PAY" ="Apple Pay";
+"MSG_PLEASE_AGREE_TERMS_CONDITON"="Ich stimme den Nutzungsbedingungen zu";
+"TXT_SELECT_PAYMENT_METHOD" ="Bitte Zahlungsmethode auswählen";
+"TXT_FEEDBACK" ="Feedback";
+"TXT_RATE"="Rate";
+"TXT_DRIVER"="Treiber";
+"error_user_register"="Sie sind bereits mit dieser Handynummer oder E-Mail registriert.";
+"PLEASE_ENTER_PIN" ="Bitte Pin eingeben";
+"EG_1234" ="zB 1234";
+"ENTER_PIN" ="PIN eingeben";
+"PLEASE_ENTER_OTP" ="Bitte OTPeingeben";
+"ENTER_OTP" ="OTP eingeben";
+"EG_123456" ="zB 123456";
+"PLEASE_ENTER_PHONE_NO" ="Bitte Telefonnummer eingeben.";
+"ENTER_PHONE_NUMBER" ="Telefonnummer eingeben";
+"MINIMUM_10_DIGITS" ="Mindestens 10 Ziffern (z. B. 1234567890)";
+"PLEASE_ENTER_BIRTHDATE" ="Geben Sie bitte das Geburtsdatum ein";
+"ENTER_BIRTHDATE" ="Geburtsdatum eingeben";
+"EG_TT-MM-JJJJ" ="zB.tt-mm-jjjj";
+"msg_not_save" ="Sind Sie sicher, dass Sie gehen möchten? Ihre Informationen werden nicht gespeichert.";
+
+//23. Nov. 2021 - Neue Zeichenfolgen
+"TXT_CANCELLED_TRIP_BY_USER" ="Von Benutzer storniert";
+"TXT_CANCELLED_TRIP_BY_DRIVER" ="Vom Fahrer storniert";
+"TXT_CANCELLED_TRIP_BY_ADMIN" ="Vom Administrator storniert";
+"ERROR_DELETE_CARD"="Sie können die Karte nicht während einer laufenden Fahrt löschen.";
+"ERROR_CODE_1100" = "Rufdienst derzeit nicht verfügbar"; "218"="Ihre Reise wurde vom Administrator storniert.";
+
+//4 Jan 2022 - Validation Cases Strings
+"msg_enter_valid_email_min_max_length" = "Bitte geben Sie eine E-Mail-Adresse zwischen %@-%@ Zeichen ein";
+"msg_enter_valid_password_min_max_length" = "Bitte geben Sie ein Passwort zwischen %@-%@ Zeichen ein";
+"msg_enter_email_phone" = "Bitte E-Mail oder Telefonnummer eingeben";
+"txt_please_wait_your_payment_is_processing" = "Bitte warten Sie, Ihre Zahlung wird bearbeitet...";
+"MSG_CODE_28" = "Ihre Reise wurde erfolgreich abgeschlossen.";
+"txt_pay_by_cash" = "Barzahlung";
+"txt_unapprove_user" = "Ihr Konto wurde nicht genehmigt oder gelöscht.Bitte wenden Sie sich an den Administrator";
+"txt_are_you_sure_account_delete" = "Sind Sie sicher?\n\nMöchten Sie Ihr Konto löschen?";
+"txt_delete_account" = "Konto löschen";
+"txt_split_payment" = "Geteilte Zahlung";
+"txt_no_user_found" = "Kein Benutzer gefunden";
+"TXT_SEARCH_USER_NOTE" ="Hinweis: Benutzer per E-Mail oder Telefonnummer suchen
+(keine Ländervorwahl hinzufügen)";
+"TXT_ACCEPTED" = "Akzeptiert";
+"TXT_WAITING" = "Warten";
+"TXT_Resend" = "Erneut senden";
+"TXT_SPLIT_PAYMENT_REQ" = "Zahlungsanforderung aufteilen";
+"txt_your_friend_send_split_payment_req" = "Ihr Freund sendet eine Zahlungsaufteilungsanforderung.";
+"txt_accept" = "Akzeptieren"; "txt_reject" = "Ablehnen";
+"MSG_CODE_111" ="Ihre Anfrage wurde erfolgreich gesendet";
+"MSG_CODE_112" ="Anfrage wurde erfolgreich angenommen";
+"MSG_CODE_113" ="Anfrage wurde erfolgreich abgelehnt";
+"MSG_CODE_114" ="Ihre Anfrage wurde erfolgreich storniert";
+"txt_max_split_req" = "Hinweis: Sie können maximal **** Benutzer hinzufügen";
+"txt_pay" = "Bezahlen";
+"txt_ride_share" = "Mitfahrgelegenheit";
+"txt_you_have_to_pay_cash" = "Sie müssen **** bar bezahlen";
+"ERROR_CODE_419" = "Ihre Anfrage wurde vom Benutzer abgebrochen.";
+"txt_go_to_payment" = "Zur Zahlung gehen";
+"txt_add_stop" = "+ Haltestelle hinzufügen";
+"txt_please_enter_valid_address" = "Bitte gültige Adresse auswählen";
+"txt_base_distance_for_first_km" = "für den ersten **** ####";
+"TXT_CALL_MESSAGE" = "Bitte warten Sie, bis der Anruf Ihnen zugewiesen wird.";
+"txt_sharing_ride_details" = "Fahrdetails teilen";
+"txt_address_already_added" = "Sie haben diese Adresse bereits hinzugefügt";
+"ERROR_CODE_1103" = "Derzeit darf Ihr Fahrer nur bar bezahlen";
+"ERROR_CODE_1105" = "Benutzer nicht gefunden";
+"alert" = "Alert";
+"add_contact_alert_message" = "Zur Sicherheit der Benutzer bietet die Anwendung während der Fahrt die SOS-Funktion, die auf die Kontaktliste Ihres Geräts zugreift, um Nummern als Notfallkontakte auszuwählen, die automatisch gewählt werden, wenn sie auf die SOS-Schaltfläche klicken. Ihre Kontakte werden in der Serversicherheit gespeichert, die wir mit niemandem teilen.";
+
+"txt_is_allow_biding" = "Ist das Bieten von Fahrten erlaubt?";
+"txt_bidding_price" = "Gebotspreis: ****";
+"txt_bidding" = "Bieten";
+"txt_enter_bidding_price" = "Bitte geben Sie den Gebotspreis ein";
+"txt_biding_trips" = "Fahrten bieten";
+"txt_please_enter_valid_bid_price" = "Bitte geben Sie einen gültigen Gebotspreis ein";
+"txt_rate_driver" = "Rate Driver";
+
+"ERROR_CODE_6007" = "Please Contact to Corporate for Add Credit Card First.";
+"ERROR_CODE_6008" = "Unternehmen verfügen über ein unzureichendes Gleichgewicht.";
+"TXT_REDEEM_POINT" = "Punkt einlösen";
+"TXT_TOTAL_REDEEM_POINTS" = "Gesamtzahl der Einlösepunkte";
+"TXT_ENTER_POINTS" = "Punkte eingeben";
+"TXT_REDEEM" = "Einlösen";
+"TXT_VIEW_REDEEM_HISTORY" = "Einlöseverlauf anzeigen";
+"VALIDATION_MSG_VALID_AMOUNT" = "Bitte geben Sie gültige Punkte ein.";
+"VALIDATION_MSG_INSUFFICIENT_BALANCE" = "Unzureichende Einlösepunkte.";
+"VALIDATION_MSG_POINT_LIMIT" = "Bitte geben Sie mindestens %@ Punkte zum Einlösen ein.";
+"MSG_POINT_TO_VALUE" = "%@ Punkte sind gleich %@ %@";
+"MSG_REDEEM_DATA_NOT_FOUND" = "Einlöseverlauf nicht gefunden.";
+"ERROR_CODE_1111" = "Ungültiges OTP. Bitte überprüfen Sie es und versuchen Sie es erneut.";
+"txt_login_with_otp" = "Login with OTP";
+"txt_minimum_bidding_price" = "Minimum bidding price should be ****";

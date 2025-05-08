@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromoCodeVC" customModule="Eber" customModuleProvider="target">
+            <connections>
+                <outlet property="tablePromo" destination="pGU-cp-cbe" id="UQG-Pa-uRS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-PK-fC4">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="qYE-pl-6Pi"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOK-6d-4EY">
+                    <rect key="frame" x="16" y="326" width="361" height="200"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-cp-cbe">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="VPu-ci-92f"/>
+                                <outlet property="delegate" destination="-1" id="j7z-DB-A8K"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="pGU-cp-cbe" firstAttribute="top" secondItem="HOK-6d-4EY" secondAttribute="top" id="DeD-Fo-jCG"/>
+                        <constraint firstAttribute="trailing" secondItem="pGU-cp-cbe" secondAttribute="trailing" id="JzE-g5-mhy"/>
+                        <constraint firstAttribute="bottom" secondItem="pGU-cp-cbe" secondAttribute="bottom" id="cXx-AH-5Ht"/>
+                        <constraint firstItem="pGU-cp-cbe" firstAttribute="leading" secondItem="HOK-6d-4EY" secondAttribute="leading" id="jVm-nn-Cyb"/>
+                        <constraint firstAttribute="height" constant="200" id="peL-1S-pwQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63031016239503612" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HOK-6d-4EY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2br-14-kyV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pi8-PK-fC4" secondAttribute="trailing" id="47e-7I-i7f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HOK-6d-4EY" secondAttribute="trailing" constant="16" id="DUh-81-3Eh"/>
+                <constraint firstItem="HOK-6d-4EY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Twd-6U-KSA"/>
+                <constraint firstItem="HOK-6d-4EY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Zfy-u5-4df"/>
+                <constraint firstItem="Pi8-PK-fC4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aHm-ZU-VvR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pi8-PK-fC4" secondAttribute="bottom" id="mLP-f5-yIX"/>
+                <constraint firstItem="Pi8-PK-fC4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yhb-7R-rIe"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
