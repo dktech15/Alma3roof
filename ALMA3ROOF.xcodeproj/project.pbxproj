@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C8F5C42DCDEFC100297273 /* WalletHistoryItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C8F5C32DCDEFC100297273 /* WalletHistoryItemViewCell.xib */; };
+		04C8F5C52DCDEFC100297273 /* WalletHistoryItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8F5C22DCDEFC100297273 /* WalletHistoryItemViewCell.swift */; };
 		4710E0762B16EAFA00196C71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4710E0752B16EAFA00196C71 /* GoogleService-Info.plist */; };
 		4710E0782B16EE2700196C71 /* Comp 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4710E0772B16EE2700196C71 /* Comp 1.mp4 */; };
 		478C113F2B32FC3500627962 /* user_splashscreen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 478C113E2B32FC3400627962 /* user_splashscreen.mp4 */; };
@@ -314,6 +316,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04C8F5C22DCDEFC100297273 /* WalletHistoryItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHistoryItemViewCell.swift; sourceTree = "<group>"; };
+		04C8F5C32DCDEFC100297273 /* WalletHistoryItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletHistoryItemViewCell.xib; sourceTree = "<group>"; };
 		072049144624DC106E287167 /* Pods-Eber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eber.debug.xcconfig"; path = "Target Support Files/Pods-Eber/Pods-Eber.debug.xcconfig"; sourceTree = "<group>"; };
 		16F02708FFEB8E77DE8E087C /* Pods_ALMA3ROOF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALMA3ROOF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38ADDBE39A6AF9EE4A21C569 /* Pods-ALMA3ROOF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALMA3ROOF.release.xcconfig"; path = "Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF.release.xcconfig"; sourceTree = "<group>"; };
@@ -627,6 +631,15 @@
 				16F02708FFEB8E77DE8E087C /* Pods_ALMA3ROOF.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04C8F5C12DCDEF6600297273 /* WalletHistoryItemViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				04C8F5C22DCDEFC100297273 /* WalletHistoryItemViewCell.swift */,
+				04C8F5C32DCDEFC100297273 /* WalletHistoryItemViewCell.xib */,
+			);
+			path = WalletHistoryItemViewCell;
 			sourceTree = "<group>";
 		};
 		087C6A7422672A0D00A12E81 /* CustomFonts */ = {
@@ -1742,6 +1755,7 @@
 		C2AC0E9A2407E56600D3BDBA /* PaymentVC */ = {
 			isa = PBXGroup;
 			children = (
+				04C8F5C12DCDEF6600297273 /* WalletHistoryItemViewCell */,
 				F97EDCD52AB972F600FC6AEB /* SendMoney */,
 				C2BE58B026CA754C0023436A /* PayStackWebviewVC */,
 				C2AC0E9B2407E56600D3BDBA /* StripeVC */,
@@ -2127,6 +2141,7 @@
 				C208E4DF21B0F79500EDB134 /* dialogForTip.xib in Resources */,
 				C253D480288E6D0F008E4646 /* StopLocationTVC.xib in Resources */,
 				478C113F2B32FC3500627962 /* user_splashscreen.mp4 in Resources */,
+				04C8F5C42DCDEFC100297273 /* WalletHistoryItemViewCell.xib in Resources */,
 				C267591426D36A09008BDDEF /* DialogForAddressVerification.xib in Resources */,
 				C2C76CEF28A24EF5003CF946 /* SplitPaymentUserInvoiceCell.xib in Resources */,
 				C2AC0EA12407E56700D3BDBA /* Payment.storyboard in Resources */,
@@ -2241,6 +2256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C208E4D321B0F79500EDB134 /* Parser.swift in Sources */,
+				04C8F5C52DCDEFC100297273 /* WalletHistoryItemViewCell.swift in Sources */,
 				C208E49D21B0F79400EDB134 /* Rows.swift in Sources */,
 				C208E4BE21B0F79400EDB134 /* HistoryResponse.swift in Sources */,
 				C208E4A921B0F79400EDB134 /* TripStatusResponse.swift in Sources */,

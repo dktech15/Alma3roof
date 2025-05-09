@@ -27,7 +27,7 @@ class WalletHistoryVC: BaseVC, UITableViewDelegate, UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setLocalization()
-        wsGetWalletHistory()
+//        wsGetWalletHistory()
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableView.automaticDimension
     }
@@ -103,28 +103,28 @@ class WalletHistoryVC: BaseVC, UITableViewDelegate, UITableViewDataSource
     }
     //MARK:WebService Calls
     
-    func wsGetWalletHistory() {
-        Utility.showLoading()
-        let dictParam:[String:String] =
-        [PARAMS.TOKEN : preferenceHelper.getSessionToken(),
-         PARAMS.USER_ID : preferenceHelper.getUserId(),
-         PARAMS.TYPE :String(CONSTANT.TYPE_USER)]
-        
-        let alamoFire:AlamofireHelper = AlamofireHelper();
-        alamoFire.getResponseFromURL(url: WebService.WS_GET_WALLET_HISTORY, methodName: AlamofireHelper.POST_METHOD, paramData: dictParam)
-        {  (response, error) -> (Void) in
-            
-            Parser.parseWalletHistory(response , toArray: self.arrForWalletHistory, completion: { [unowned self] (result) in
-                if result {
-                    self.tableView.reloadData()
-                    self.updateUI(isUpdate: true)
-                }
-                else {
-                    self.updateUI(isUpdate: false)
-                }
-                Utility.hideLoading()
-            })
-            
-        }
-    }
+//    func wsGetWalletHistory() {
+//        Utility.showLoading()
+//        let dictParam:[String:String] =
+//        [PARAMS.TOKEN : preferenceHelper.getSessionToken(),
+//         PARAMS.USER_ID : preferenceHelper.getUserId(),
+//         PARAMS.TYPE :String(CONSTANT.TYPE_USER)]
+//        
+//        let alamoFire:AlamofireHelper = AlamofireHelper();
+//        alamoFire.getResponseFromURL(url: WebService.WS_GET_WALLET_HISTORY, methodName: AlamofireHelper.POST_METHOD, paramData: dictParam)
+//        {  (response, error) -> (Void) in
+//            
+//            Parser.parseWalletHistory(response , toArray: self.arrForWalletHistory, completion: { [unowned self] (result) in
+//                if result {
+//                    self.tableView.reloadData()
+//                    self.updateUI(isUpdate: true)
+//                }
+//                else {
+//                    self.updateUI(isUpdate: false)
+//                }
+//                Utility.hideLoading()
+//            })
+//            
+//        }
+//    }
 }

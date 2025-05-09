@@ -14,6 +14,8 @@ class PaymentVC: BaseVC,UITabBarDelegate,UIScrollViewDelegate
     //MARK: - OutLets
     
     /*Navigation View*/
+    @IBOutlet weak var imgEmpty: UIImageView!
+    @IBOutlet weak var tableViewWalletHistory: UITableView!
     @IBOutlet weak var navigationView: UIView!
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
@@ -46,6 +48,8 @@ class PaymentVC: BaseVC,UITabBarDelegate,UIScrollViewDelegate
     let socketHelper:SocketHelper = SocketHelper.shared
     var applePay: StripeApplePayHelper?
     var walletAmount = 0.0
+    var arrForWalletHistory = NSMutableArray()
+
     //MARK: - LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,6 +87,9 @@ class PaymentVC: BaseVC,UITabBarDelegate,UIScrollViewDelegate
     }
     
     func initialViewSetup() {
+        wsGetWalletHistory()
+        tableViewWalletHistory.estimatedRowHeight = 120
+        tableViewWalletHistory.rowHeight = UITableView.automaticDimension
         finalTabItems = paymentTab.items!
         paymentTab.items?.removeAll()
         scrollView.isPagingEnabled = true
@@ -142,6 +149,8 @@ class PaymentVC: BaseVC,UITabBarDelegate,UIScrollViewDelegate
         self.viewControllers?.append(stripeVC)
         self.containerViews?.append(containerForStripe)
         self.initiateTabbarWith(vc: stripeVC, container: containerForStripe)
+        
+        tableViewWalletHistory.register(UINib(nibName: WalletHistoryItemViewCell.identifier, bundle: nil), forCellReuseIdentifier: WalletHistoryItemViewCell.identifier)
         
         payStackVC = UIStoryboard(name: "Payment", bundle: nil).instantiateViewController(withIdentifier: "PayStackVC") as? PayStackVC
         
@@ -928,6 +937,36 @@ extension PaymentVC {
             }
         }
     }
+    
+    func wsGetWalletHistory() {
+        Utility.showLoading()
+        let dictParam:[String:String] =
+        [PARAMS.TOKEN : preferenceHelper.getSessionToken(),
+         PARAMS.USER_ID : preferenceHelper.getUserId(),
+         PARAMS.TYPE :String(CONSTANT.TYPE_USER)]
+        
+        let alamoFire:AlamofireHelper = AlamofireHelper();
+        alamoFire.getResponseFromURL(url: WebService.WS_GET_WALLET_HISTORY, methodName: AlamofireHelper.POST_METHOD, paramData: dictParam)
+        {  (response, error) -> (Void) in
+            
+            Parser.parseWalletHistory(response , toArray: self.arrForWalletHistory, completion: { [unowned self] (result) in
+                if result {
+                    self.tableViewWalletHistory.reloadData()
+                    self.updateUI(isUpdate: true)
+                }
+                else {
+                    self.updateUI(isUpdate: false)
+                }
+                Utility.hideLoading()
+            })
+            
+        }
+    }
+    
+    func updateUI(isUpdate:Bool = false) {
+        imgEmpty.isHidden = isUpdate
+        tableViewWalletHistory.isHidden = !isUpdate
+    }
 }
 
 extension PaymentVC: PaypalHelperDelegate {
@@ -953,4 +992,22 @@ extension PaymentVC: StripeApplePayHelperDelegate {
     func didFailed(err: String) {
         Utility.showToast(message: err)
     }
+}
+
+extension PaymentVC : UITableViewDelegate,UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: WalletHistoryItemViewCell.identifier, for: indexPath) as! WalletHistoryItemViewCell
+        return cell
+    }
+    
+    
 }

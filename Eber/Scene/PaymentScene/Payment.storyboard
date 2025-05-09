@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vit-z8-YR4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vit-z8-YR4">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +23,7 @@
         <!--PaymentVC-->
         <scene sceneID="hAu-cG-cEw">
             <objects>
-                <viewController storyboardIdentifier="PaymentVC" automaticallyAdjustsScrollViewInsets="NO" id="Vit-z8-YR4" customClass="PaymentVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentVC" automaticallyAdjustsScrollViewInsets="NO" id="Vit-z8-YR4" customClass="PaymentVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t8P-fw-kMe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56s-IV-1FQ" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56s-IV-1FQ" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="23" width="97" height="0.0"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="97" id="6fp-fW-XIp"/>
@@ -310,27 +310,53 @@
                                     <constraint firstItem="buL-71-fGk" firstAttribute="centerY" secondItem="4Qd-lI-dpN" secondAttribute="centerY" id="prO-9w-lt4"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oya-eO-pKr">
+                                <rect key="frame" x="0.0" y="184" width="320" height="384"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vit-z8-YR4" id="Doq-Z6-XBK"/>
+                                    <outlet property="delegate" destination="Vit-z8-YR4" id="lSY-rD-nf7"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_box" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-Sk-or6">
+                                <rect key="frame" x="0.0" y="552" width="320" height="16"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t4h-71-NVB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Yi5-Rb-gqv" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="2gz-yv-nKM"/>
+                            <constraint firstItem="oya-eO-pKr" firstAttribute="leading" secondItem="t4h-71-NVB" secondAttribute="leading" id="7ms-te-4Gz"/>
                             <constraint firstItem="VYf-U6-ZLH" firstAttribute="top" secondItem="vgB-sz-23x" secondAttribute="bottom" constant="20" id="99V-4w-uSD"/>
                             <constraint firstItem="4Qd-lI-dpN" firstAttribute="top" secondItem="t4h-71-NVB" secondAttribute="top" id="EDj-Tr-jGH"/>
                             <constraint firstItem="Yi5-Rb-gqv" firstAttribute="top" secondItem="VYf-U6-ZLH" secondAttribute="bottom" constant="20" id="GfO-vp-472"/>
+                            <constraint firstItem="F5t-Sk-or6" firstAttribute="leading" secondItem="t4h-71-NVB" secondAttribute="leading" id="H9p-ka-Kt5"/>
+                            <constraint firstItem="oya-eO-pKr" firstAttribute="top" secondItem="vgB-sz-23x" secondAttribute="bottom" id="MAO-JB-kqe"/>
                             <constraint firstItem="0Vy-TY-9Kg" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" constant="-121" id="N1Q-Zx-1jP"/>
                             <constraint firstItem="0Vy-TY-9Kg" firstAttribute="top" secondItem="Yi5-Rb-gqv" secondAttribute="bottom" constant="10" id="OuP-Ys-WNd"/>
                             <constraint firstItem="4Qd-lI-dpN" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="Q4D-lU-Xuh"/>
+                            <constraint firstItem="F5t-Sk-or6" firstAttribute="height" secondItem="oya-eO-pKr" secondAttribute="height" multiplier="0.0416667" id="Uh2-Rj-3CL"/>
                             <constraint firstItem="vgB-sz-23x" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" id="Yel-zq-k8d"/>
+                            <constraint firstItem="F5t-Sk-or6" firstAttribute="trailing" secondItem="t4h-71-NVB" secondAttribute="trailing" id="Z8O-Pq-yLC"/>
                             <constraint firstItem="4Qd-lI-dpN" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" id="c9g-C8-EVM"/>
                             <constraint firstItem="Yi5-Rb-gqv" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" constant="-101" id="cp4-P5-LwR"/>
                             <constraint firstItem="VYf-U6-ZLH" firstAttribute="leading" secondItem="t4h-71-NVB" secondAttribute="leading" id="dAn-FS-vrd"/>
+                            <constraint firstItem="t4h-71-NVB" firstAttribute="trailing" secondItem="oya-eO-pKr" secondAttribute="trailing" id="f2v-Mt-E1O"/>
                             <constraint firstItem="t4h-71-NVB" firstAttribute="bottom" secondItem="0Vy-TY-9Kg" secondAttribute="bottom" constant="20" id="fE8-jI-eZZ"/>
                             <constraint firstItem="vgB-sz-23x" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="h5t-EW-1Pe"/>
                             <constraint firstItem="t4h-71-NVB" firstAttribute="trailing" secondItem="VYf-U6-ZLH" secondAttribute="trailing" id="haR-Uq-bKV"/>
+                            <constraint firstItem="t4h-71-NVB" firstAttribute="bottom" secondItem="oya-eO-pKr" secondAttribute="bottom" id="t53-hx-Bzn"/>
+                            <constraint firstAttribute="bottom" secondItem="F5t-Sk-or6" secondAttribute="bottom" id="uyV-yQ-mFQ"/>
                             <constraint firstItem="0Vy-TY-9Kg" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="yK2-nd-wnU"/>
                             <constraint firstItem="vgB-sz-23x" firstAttribute="top" secondItem="4Qd-lI-dpN" secondAttribute="bottom" id="zTb-BO-ZZS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VYf-U6-ZLH"/>
+                                <exclude reference="Yi5-Rb-gqv"/>
+                                <exclude reference="0Vy-TY-9Kg"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="fkw-xu-gLg"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -344,6 +370,7 @@
                         <outlet property="btnWalletHistory" destination="Yi5-Rb-gqv" id="a4e-YT-amZ"/>
                         <outlet property="containerForApplePay" destination="Sgm-PL-IJL" id="Z0u-9k-6N2"/>
                         <outlet property="containerForStripe" destination="WmC-h8-DtW" id="zTS-Df-1Go"/>
+                        <outlet property="imgEmpty" destination="F5t-Sk-or6" id="3u4-sB-SsG"/>
                         <outlet property="lblIconWalllet" destination="bFn-mI-VVQ" id="4BT-fI-AcX"/>
                         <outlet property="lblSelectPaymentMethod" destination="Dph-Xw-Y2Y" id="8bk-PJ-hPx"/>
                         <outlet property="lblTitle" destination="6In-r0-c90" id="P8u-jP-jh2"/>
@@ -353,6 +380,7 @@
                         <outlet property="paymentTab" destination="IsW-DA-roS" id="BcS-vj-2gz"/>
                         <outlet property="scrollView" destination="tfH-qn-BKp" id="zWm-mN-OnH"/>
                         <outlet property="switchForWallet" destination="4r3-Fa-Pxs" id="LHq-Fv-u7u"/>
+                        <outlet property="tableViewWalletHistory" destination="oya-eO-pKr" id="PWO-KN-mlh"/>
                         <outlet property="txtAddWallet" destination="56s-IV-1FQ" id="Qqt-HC-H6y"/>
                         <outlet property="viewForPaymentGateway" destination="VYf-U6-ZLH" id="Bfz-tp-Dyf"/>
                         <outlet property="viewForShabCredits" destination="vgB-sz-23x" id="qFw-IB-LuQ"/>
@@ -363,12 +391,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcR-ba-Q56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8037" y="784"/>
+            <point key="canvasLocation" x="-8038.3999999999996" y="783.50824587706154"/>
         </scene>
         <!--Pay StackVC-->
         <scene sceneID="d4n-E7-LIq">
             <objects>
-                <viewController storyboardIdentifier="PayStackVC" id="RHx-Ak-B2s" customClass="PayStackVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PayStackVC" id="RHx-Ak-B2s" customClass="PayStackVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="laU-ig-QUg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,7 +503,7 @@
         <!--Add CardVC-->
         <scene sceneID="etG-a2-ZKc">
             <objects>
-                <viewController id="5Ix-dn-xhe" customClass="AddCardVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Ix-dn-xhe" customClass="AddCardVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1aC-XS-eYI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,7 +514,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qE0-R0-D3k">
                                         <rect key="frame" x="10" y="0.0" width="315" height="170"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Holder's name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuH-Xy-1Lq" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Holder's name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuH-Xy-1Lq" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ll8-OJ-3RT"/>
@@ -494,7 +522,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="namePhonePad" smartDashesType="no"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Card number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oBg-Ut-1Wg" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Card number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oBg-Ut-1Wg" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="60" width="315" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="cc-number"/>
@@ -505,7 +533,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DFy-Rh-8Vf">
                                                 <rect key="frame" x="0.0" y="120" width="315" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM/AA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3tS-Qb-BR6" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM/AA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3tS-Qb-BR6" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="152.5" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -516,7 +544,7 @@
                                                             <outlet property="delegate" destination="5Ix-dn-xhe" id="GK1-zT-qMH"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-bX-moy" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-bX-moy" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                         <rect key="frame" x="162.5" y="0.0" width="152.5" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -635,7 +663,7 @@
         <!--Wallet HistoryVC-->
         <scene sceneID="beX-nP-1oo">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6br-9t-biU" customClass="WalletHistoryVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6br-9t-biU" customClass="WalletHistoryVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22j-bJ-MfT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,7 +676,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="walletHistoryCell" rowHeight="100" id="Fp2-jk-Fhr" customClass="WalletHistoryCell" customModule="Eber" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="walletHistoryCell" rowHeight="100" id="Fp2-jk-Fhr" customClass="WalletHistoryCell" customModule="ALMA3ROOF" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fp2-jk-Fhr" id="g30-fJ-7kk">
@@ -849,7 +877,7 @@
         <!--Wallet History DetailVC-->
         <scene sceneID="k42-AH-HbE">
             <objects>
-                <viewController id="m5K-iA-QQ9" customClass="WalletHistoryDetailVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m5K-iA-QQ9" customClass="WalletHistoryDetailVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xMu-GQ-hLm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1091,7 +1119,7 @@
         <!--Apple PayVC-->
         <scene sceneID="t5V-I9-6ot">
             <objects>
-                <viewController storyboardIdentifier="ApplePayVC" id="AhA-nw-0an" customClass="ApplePayVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ApplePayVC" id="AhA-nw-0an" customClass="ApplePayVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9R-N6-dVH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1108,7 +1136,7 @@
         <!--StripeVC-->
         <scene sceneID="aEY-Lw-56d">
             <objects>
-                <viewController storyboardIdentifier="stripeVC" automaticallyAdjustsScrollViewInsets="NO" id="KY0-QL-30z" customClass="StripeVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stripeVC" automaticallyAdjustsScrollViewInsets="NO" id="KY0-QL-30z" customClass="StripeVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DjB-5r-hml">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1138,7 +1166,7 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="cT7-Qc-cMR" customClass="StripeCardCell" customModule="Eber" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="cT7-Qc-cMR" customClass="StripeCardCell" customModule="ALMA3ROOF" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="280" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="cT7-Qc-cMR" id="DGz-Sf-fI4">
@@ -1276,23 +1304,6 @@
             <point key="canvasLocation" x="-7850" y="1387"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="3tS-Qb-BR6">
-            <size key="intrinsicContentSize" width="24.5" height="18.5"/>
-        </designable>
-        <designable name="56s-IV-1FQ">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="ccu-bX-moy">
-            <size key="intrinsicContentSize" width="28.5" height="18.5"/>
-        </designable>
-        <designable name="kuH-Xy-1Lq">
-            <size key="intrinsicContentSize" width="128.5" height="18.5"/>
-        </designable>
-        <designable name="oBg-Ut-1Wg">
-            <size key="intrinsicContentSize" width="130" height="18.5"/>
-        </designable>
-    </designables>
     <resources>
         <image name="asset-back" width="23" height="16"/>
         <image name="asset-card_u" width="27.5" height="27.5"/>
