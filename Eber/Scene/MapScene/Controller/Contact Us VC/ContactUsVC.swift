@@ -247,7 +247,7 @@ class ContactUsVC: BaseVC
         instaView.addGestureRecognizer(instaTap)
         let facebookView = makeSocialRow(icon: .facebook, name: "Facebook", info: "")
         let facebookTap = UITapGestureRecognizer(target: self, action: #selector(didTapfacebook))
-        facebookView.addGestureRecognizer(instaTap)
+        facebookView.addGestureRecognizer(facebookTap)
         contentView.addArrangedSubview(instaView)
         contentView.addArrangedSubview(facebookView)
 //        contentView.addArrangedSubview(makeSocialRow(icon: "telegram", name: "Telegram", info: ""))
