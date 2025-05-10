@@ -3998,7 +3998,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWg-ZF-1oc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWg-ZF-1oc">
                                 <rect key="frame" x="99" y="231" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="eber" family="eber" pointSize="122"/>
@@ -4130,6 +4130,13 @@
                             <constraint firstItem="FP1-v2-xF4" firstAttribute="top" secondItem="VIH-Ks-vAL" secondAttribute="top" id="yVy-Ek-IX0"/>
                             <constraint firstItem="GXh-ma-8bd" firstAttribute="width" secondItem="3Kt-c3-hfM" secondAttribute="width" constant="-40" id="ycM-tA-k7N"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OU3-7B-nq7"/>
+                                <exclude reference="QWg-ZF-1oc"/>
+                                <exclude reference="GXh-ma-8bd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="btnBack" destination="h9k-wV-AFw" id="r2p-ly-dQe"/>
@@ -7414,7 +7421,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
