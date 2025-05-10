@@ -49,6 +49,7 @@ class PaymentVC: BaseVC,UITabBarDelegate,UIScrollViewDelegate
     var applePay: StripeApplePayHelper?
     var walletAmount = 0.0
     var arrForWalletHistory = NSMutableArray()
+    var selectedWalletRequest:WalletHistoryItem?  = nil
 
     //MARK: - LIFE CYCLE
     override func viewDidLoad() {
@@ -356,22 +357,26 @@ class PaymentVC: BaseVC,UITabBarDelegate,UIScrollViewDelegate
     
     //MARK: - Scrollview methods
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if decelerate == false {
-            let currentPage = scrollView.currentPage
-            if currentPage <= ((viewControllers?.count) ?? 0 - 1) && currentPage >= 0
-            {
-                self.tabBar(paymentTab, didSelect: paymentTab.items![currentPage])
-                paymentTab.selectedItem = paymentTab.items?[currentPage]
+        if scrollView != tableViewWalletHistory {
+            if decelerate == false {
+                let currentPage = scrollView.currentPage
+                if currentPage <= ((viewControllers?.count) ?? 0 - 1) && currentPage >= 0
+                {
+                    self.tabBar(paymentTab, didSelect: paymentTab.items![currentPage])
+                    paymentTab.selectedItem = paymentTab.items?[currentPage]
+                }
             }
         }
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let currentPage = scrollView.currentPage
-        if currentPage <= (((viewControllers?.count) ?? 0) - 1) && currentPage >= 0
-        {
-            self.tabBar(paymentTab, didSelect: paymentTab.items![currentPage])
-            paymentTab.selectedItem = paymentTab.items?[currentPage]
+        if scrollView != tableViewWalletHistory {
+            let currentPage = scrollView.currentPage
+            if currentPage <= (((viewControllers?.count) ?? 0) - 1) && currentPage >= 0
+            {
+                self.tabBar(paymentTab, didSelect: paymentTab.items![currentPage])
+                paymentTab.selectedItem = paymentTab.items?[currentPage]
+            }
         }
     }
     
@@ -1001,11 +1006,14 @@ extension PaymentVC : UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrForWalletHistory.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: WalletHistoryItemViewCell.identifier, for: indexPath) as! WalletHistoryItemViewCell
+        cell.selectionStyle = .none
+        let walletData = (arrForWalletHistory[indexPath.row] as! WalletHistoryItem)
+        cell.setWalletHistoryData(walletRequestData: walletData )
         return cell
     }
     

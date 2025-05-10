@@ -29,23 +29,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-sz-23x" userLabel="View For Shab Credits">
-                                <rect key="frame" x="0.0" y="64" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6Ow-vK-G4r">
-                                        <rect key="frame" x="20" y="10" width="257" height="100"/>
+                                        <rect key="frame" x="20" y="10" width="257" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D66-7l-Wrg">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                                 <subviews>
                                                     <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asset-wallet" translatesAutoresizingMaskIntoConstraints="NO" id="pa6-2k-vcy">
-                                                        <rect key="frame" x="5" y="25" width="50" height="50"/>
+                                                        <rect key="frame" x="5" y="15" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="X5b-1G-bhZ"/>
                                                             <constraint firstAttribute="width" secondItem="pa6-2k-vcy" secondAttribute="height" multiplier="1:1" id="szZ-Hx-lt5"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFn-mI-VVQ" userLabel="lblWalletIcon">
-                                                        <rect key="frame" x="-20" y="-2.5" width="100" height="100"/>
+                                                        <rect key="frame" x="-20" y="-12.5" width="100" height="100"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="8R6-Yn-DS0"/>
@@ -66,7 +66,7 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qMj-YL-mE3">
-                                                <rect key="frame" x="75" y="27" width="97" height="46"/>
+                                                <rect key="frame" x="75" y="17" width="97" height="46"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AB-sI-5Zn">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="20.5"/>
@@ -94,7 +94,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-Rc-Qyq">
-                                                <rect key="frame" x="187" y="17" width="70" height="66"/>
+                                                <rect key="frame" x="187" y="7" width="70" height="66"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4r3-Fa-Pxs">
                                                         <rect key="frame" x="21" y="0.0" width="51" height="31"/>
@@ -123,6 +123,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="6Ow-vK-G4r" secondAttribute="bottom" constant="10" id="HIF-tq-tCB"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ohi-mJ-nZT"/>
                                     <constraint firstItem="6Ow-vK-G4r" firstAttribute="top" secondItem="vgB-sz-23x" secondAttribute="top" constant="10" id="tnN-3d-FI1"/>
                                     <constraint firstAttribute="trailing" secondItem="6Ow-vK-G4r" secondAttribute="trailing" constant="43" id="uvp-0T-v3d"/>
                                     <constraint firstItem="6Ow-vK-G4r" firstAttribute="leading" secondItem="vgB-sz-23x" secondAttribute="leading" constant="20" id="yQY-3B-fTt"/>
@@ -206,29 +207,6 @@
                                     <constraint firstItem="tfH-qn-BKp" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="VYf-U6-ZLH" secondAttribute="bottom" id="xsO-P7-Br0"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yi5-Rb-gqv">
-                                <rect key="frame" x="50.5" y="448" width="219" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4zU-Sb-Ogr"/>
-                                </constraints>
-                                <state key="normal" title="Wallet History"/>
-                                <connections>
-                                    <action selector="onClickBtnWalletHistory:" destination="Vit-z8-YR4" eventType="touchUpInside" id="V3J-SQ-lXi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vy-TY-9Kg">
-                                <rect key="frame" x="60.5" y="498" width="199" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="eCg-I4-JEB"/>
-                                </constraints>
-                                <state key="normal" title="PAY NOW">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onClickBtnAddCard:" destination="Vit-z8-YR4" eventType="touchUpInside" id="bZn-4t-MtS"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qd-lI-dpN" userLabel="navigationView">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <subviews>
@@ -310,8 +288,8 @@
                                     <constraint firstItem="buL-71-fGk" firstAttribute="centerY" secondItem="4Qd-lI-dpN" secondAttribute="centerY" id="prO-9w-lt4"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oya-eO-pKr">
-                                <rect key="frame" x="0.0" y="184" width="320" height="384"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oya-eO-pKr">
+                                <rect key="frame" x="0.0" y="164" width="320" height="404"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Vit-z8-YR4" id="Doq-Z6-XBK"/>
@@ -319,8 +297,31 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_box" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-Sk-or6">
-                                <rect key="frame" x="0.0" y="552" width="320" height="16"/>
+                                <rect key="frame" x="0.0" y="164" width="320" height="404"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yi5-Rb-gqv">
+                                <rect key="frame" x="50.5" y="448" width="219" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4zU-Sb-Ogr"/>
+                                </constraints>
+                                <state key="normal" title="Wallet History"/>
+                                <connections>
+                                    <action selector="onClickBtnWalletHistory:" destination="Vit-z8-YR4" eventType="touchUpInside" id="V3J-SQ-lXi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vy-TY-9Kg">
+                                <rect key="frame" x="60.5" y="498" width="199" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eCg-I4-JEB"/>
+                                </constraints>
+                                <state key="normal" title="PAY NOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickBtnAddCard:" destination="Vit-z8-YR4" eventType="touchUpInside" id="bZn-4t-MtS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t4h-71-NVB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,7 +336,6 @@
                             <constraint firstItem="0Vy-TY-9Kg" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" constant="-121" id="N1Q-Zx-1jP"/>
                             <constraint firstItem="0Vy-TY-9Kg" firstAttribute="top" secondItem="Yi5-Rb-gqv" secondAttribute="bottom" constant="10" id="OuP-Ys-WNd"/>
                             <constraint firstItem="4Qd-lI-dpN" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="Q4D-lU-Xuh"/>
-                            <constraint firstItem="F5t-Sk-or6" firstAttribute="height" secondItem="oya-eO-pKr" secondAttribute="height" multiplier="0.0416667" id="Uh2-Rj-3CL"/>
                             <constraint firstItem="vgB-sz-23x" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" id="Yel-zq-k8d"/>
                             <constraint firstItem="F5t-Sk-or6" firstAttribute="trailing" secondItem="t4h-71-NVB" secondAttribute="trailing" id="Z8O-Pq-yLC"/>
                             <constraint firstItem="4Qd-lI-dpN" firstAttribute="width" secondItem="t8P-fw-kMe" secondAttribute="width" id="c9g-C8-EVM"/>
@@ -346,6 +346,7 @@
                             <constraint firstItem="vgB-sz-23x" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="h5t-EW-1Pe"/>
                             <constraint firstItem="t4h-71-NVB" firstAttribute="trailing" secondItem="VYf-U6-ZLH" secondAttribute="trailing" id="haR-Uq-bKV"/>
                             <constraint firstItem="t4h-71-NVB" firstAttribute="bottom" secondItem="oya-eO-pKr" secondAttribute="bottom" id="t53-hx-Bzn"/>
+                            <constraint firstItem="F5t-Sk-or6" firstAttribute="top" secondItem="vgB-sz-23x" secondAttribute="bottom" id="ulp-1a-Qkn"/>
                             <constraint firstAttribute="bottom" secondItem="F5t-Sk-or6" secondAttribute="bottom" id="uyV-yQ-mFQ"/>
                             <constraint firstItem="0Vy-TY-9Kg" firstAttribute="centerX" secondItem="t4h-71-NVB" secondAttribute="centerX" id="yK2-nd-wnU"/>
                             <constraint firstItem="vgB-sz-23x" firstAttribute="top" secondItem="4Qd-lI-dpN" secondAttribute="bottom" id="zTb-BO-ZZS"/>
