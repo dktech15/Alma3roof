@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Sentry
 
 class RegisterVC: BaseVC,OtpDelegate
 {
@@ -381,6 +382,8 @@ extension RegisterVC{
                 Utility.hideLoading()
             } else {
                 if Parser.parseUserDetail(response: response) {
+                    SentrySDK.setUser(Sentry.User(userId: CurrentTrip.shared.user.userId))
+
                     if !(CurrentTrip.shared.user.isReferral == TRUE) && CurrentTrip.shared.user.countryDetail.isReferral {
                         Utility.hideLoading()
                         self.performSegue(withIdentifier: SEGUE.REGISTER_TO_REFERRAL, sender: self)
