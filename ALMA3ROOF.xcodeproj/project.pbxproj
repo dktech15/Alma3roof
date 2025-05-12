@@ -16,7 +16,6 @@
 		501A109F2A78FA3C00333547 /* GestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A109E2A78FA3C00333547 /* GestureExtension.swift */; };
 		50DBA7A42A80B9CC00847ABD /* CustomAppleCardDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DBA7A22A80B9CC00847ABD /* CustomAppleCardDialog.xib */; };
 		50DBA7A52A80B9CC00847ABD /* CustomAppleCardDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBA7A32A80B9CC00847ABD /* CustomAppleCardDialog.swift */; };
-		8379318BA292F8DFA7DDA29E /* Pods_ALMA3ROOF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F02708FFEB8E77DE8E087C /* Pods_ALMA3ROOF.framework */; };
 		9F2C9DAD289159CA00668CBA /* UpcomingTripDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C9DAC289159CA00668CBA /* UpcomingTripDetailsVC.swift */; };
 		C202B8242201756E003910E4 /* CustomCorporateRequestDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202B8222201756E003910E4 /* CustomCorporateRequestDialog.swift */; };
 		C202B8252201756E003910E4 /* dialogForCorporate.xib in Resources */ = {isa = PBXBuildFile; fileRef = C202B8232201756E003910E4 /* dialogForCorporate.xib */; };
@@ -264,9 +263,9 @@
 		E3C0414B27588D940027E548 /* Eber User App Diagram.drawio.svg in Resources */ = {isa = PBXBuildFile; fileRef = E3C0414927588D940027E548 /* Eber User App Diagram.drawio.svg */; };
 		E3FFBDE12742A41E00E0C0DE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E3FFBDE02742A41E00E0C0DE /* .gitignore */; };
 		E8038B052D9ED250007B5AB4 /* PaymentSelectionPopUPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8038B042D9ED250007B5AB4 /* PaymentSelectionPopUPVC.swift */; };
-		E82219AB2DD248E900BAD571 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E82219AA2DD248E900BAD571 /* Sentry */; };
-		E82219AD2DD248E900BAD571 /* Sentry-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E82219AC2DD248E900BAD571 /* Sentry-Dynamic */; };
-		E82219AF2DD248E900BAD571 /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E82219AE2DD248E900BAD571 /* SentrySwiftUI */; };
+		E82219C82DD2574200BAD571 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = E82219C72DD2574200BAD571 /* Sentry */; };
+		E82219CA2DD2574200BAD571 /* Sentry-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E82219C92DD2574200BAD571 /* Sentry-Dynamic */; };
+		E82219CC2DD2574200BAD571 /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E82219CB2DD2574200BAD571 /* SentrySwiftUI */; };
 		E855621E2D902A55007DBA45 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E855621D2D902A55007DBA45 /* UIViewController+Extension.swift */; };
 		E869F8C42D96F372002E4593 /* E-K.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E869F8C12D96F372002E4593 /* E-K.gpx */; };
 		E869F8C52D96F372002E4593 /* C.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E869F8BF2D96F372002E4593 /* C.gpx */; };
@@ -304,9 +303,6 @@
 /* Begin PBXFileReference section */
 		04C8F5C22DCDEFC100297273 /* WalletHistoryItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHistoryItemViewCell.swift; sourceTree = "<group>"; };
 		04C8F5C32DCDEFC100297273 /* WalletHistoryItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletHistoryItemViewCell.xib; sourceTree = "<group>"; };
-		072049144624DC106E287167 /* Pods-Eber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eber.debug.xcconfig"; path = "Target Support Files/Pods-Eber/Pods-Eber.debug.xcconfig"; sourceTree = "<group>"; };
-		16F02708FFEB8E77DE8E087C /* Pods_ALMA3ROOF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALMA3ROOF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38ADDBE39A6AF9EE4A21C569 /* Pods-ALMA3ROOF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALMA3ROOF.release.xcconfig"; path = "Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF.release.xcconfig"; sourceTree = "<group>"; };
 		4710E0752B16EAFA00196C71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4710E0772B16EE2700196C71 /* Comp 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comp 1.mp4"; sourceTree = "<group>"; };
 		478C113E2B32FC3400627962 /* user_splashscreen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = user_splashscreen.mp4; sourceTree = "<group>"; };
@@ -315,7 +311,6 @@
 		50DBA7A22A80B9CC00847ABD /* CustomAppleCardDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAppleCardDialog.xib; sourceTree = "<group>"; };
 		50DBA7A32A80B9CC00847ABD /* CustomAppleCardDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAppleCardDialog.swift; sourceTree = "<group>"; };
 		9F2C9DAC289159CA00668CBA /* UpcomingTripDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTripDetailsVC.swift; sourceTree = "<group>"; };
-		B1CF4D423D7F5AC3B6013EBA /* Pods-ALMA3ROOF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALMA3ROOF.debug.xcconfig"; path = "Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF.debug.xcconfig"; sourceTree = "<group>"; };
 		C202B8222201756E003910E4 /* CustomCorporateRequestDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorporateRequestDialog.swift; sourceTree = "<group>"; };
 		C202B8232201756E003910E4 /* dialogForCorporate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialogForCorporate.xib; sourceTree = "<group>"; };
 		C202D149229BF624002C323D /* FavouriteDriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteDriverVC.swift; sourceTree = "<group>"; };
@@ -563,7 +558,6 @@
 		C2ECD04C2A55A2BE0043D106 /* ReasonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReasonCell.xib; sourceTree = "<group>"; };
 		C2EDDB9521FC88FC0012045D /* Eber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eber.entitlements; sourceTree = "<group>"; };
 		C2F01C34288A73130073C2D1 /* SplitPaymentPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitPaymentPay.swift; sourceTree = "<group>"; };
-		D9AB18520DB9378A4698D585 /* Pods-Eber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eber.release.xcconfig"; path = "Target Support Files/Pods-Eber/Pods-Eber.release.xcconfig"; sourceTree = "<group>"; };
 		E366E87A27831357006B3996 /* ValidationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtension.swift; sourceTree = "<group>"; };
 		E36B1D5C266763AB0018EFF0 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		E3C0414927588D940027E548 /* Eber User App Diagram.drawio.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Eber User App Diagram.drawio.svg"; sourceTree = "<group>"; };
@@ -591,7 +585,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		33313B022DCD1C3C00B98B1A /* ReedemHistory */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ReedemHistory; sourceTree = "<group>"; };
+		33313B022DCD1C3C00B98B1A /* ReedemHistory */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = ReedemHistory;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -600,10 +604,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E36B1D5D266763AB0018EFF0 /* PassKit.framework in Frameworks */,
-				E82219AF2DD248E900BAD571 /* SentrySwiftUI in Frameworks */,
-				E82219AD2DD248E900BAD571 /* Sentry-Dynamic in Frameworks */,
-				8379318BA292F8DFA7DDA29E /* Pods_ALMA3ROOF.framework in Frameworks */,
-				E82219AB2DD248E900BAD571 /* Sentry in Frameworks */,
+				E82219CC2DD2574200BAD571 /* SentrySwiftUI in Frameworks */,
+				E82219CA2DD2574200BAD571 /* Sentry-Dynamic in Frameworks */,
+				E82219C82DD2574200BAD571 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +619,6 @@
 				E36B1D5C266763AB0018EFF0 /* PassKit.framework */,
 				C2895753229FFBA20081212F /* UserNotifications.framework */,
 				C2895755229FFBA20081212F /* UserNotificationsUI.framework */,
-				16F02708FFEB8E77DE8E087C /* Pods_ALMA3ROOF.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -674,10 +676,6 @@
 		A746AD9242B3676B1695C996 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				072049144624DC106E287167 /* Pods-Eber.debug.xcconfig */,
-				D9AB18520DB9378A4698D585 /* Pods-Eber.release.xcconfig */,
-				B1CF4D423D7F5AC3B6013EBA /* Pods-ALMA3ROOF.debug.xcconfig */,
-				38ADDBE39A6AF9EE4A21C569 /* Pods-ALMA3ROOF.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2008,14 +2006,12 @@
 			buildConfigurationList = C252368B21B0F4B6005B29EE /* Build configuration list for PBXNativeTarget "ALMA3ROOF" */;
 			buildPhases = (
 				AF50A3C43F4C0AEECD2F5E42 /* Copy Target Symbols */,
-				81F3F0C93F4F672D784DD24B /* [CP] Check Pods Manifest.lock */,
 				C252367521B0F4B5005B29EE /* Sources */,
 				C252367621B0F4B5005B29EE /* Frameworks */,
 				C252367721B0F4B5005B29EE /* Resources */,
 				C2B42D5A223137FA00D84CA8 /* ShellScript */,
 				C2895764229FFBA20081212F /* Embed App Extensions */,
-				90445F3CF895D9FDB05A0CC2 /* [CP] Embed Pods Frameworks */,
-				27B800CE3AE963A5ECA9FD53 /* [CP] Copy Pods Resources */,
+				90ECA3AAA80544FBB5B73EE8 /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
@@ -2063,9 +2059,6 @@
 				de,
 			);
 			mainGroup = C252367021B0F4B5005B29EE;
-			packageReferences = (
-				E82219A92DD248E900BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
-			);
 			productRefGroup = C252367A21B0F4B5005B29EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2163,61 +2156,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27B800CE3AE963A5ECA9FD53 /* [CP] Copy Pods Resources */ = {
+		90ECA3AAA80544FBB5B73EE8 /* Upload Debug Symbols to Sentry */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81F3F0C93F4F672D784DD24B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "Upload Debug Symbols to Sentry";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ALMA3ROOF-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90445F3CF895D9FDB05A0CC2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALMA3ROOF/Pods-ALMA3ROOF-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# This script is responsible for uploading debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=alma3roof-tech\nexport SENTRY_PROJECT=apple-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
 		};
 		AF50A3C43F4C0AEECD2F5E42 /* Copy Target Symbols */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2639,15 +2591,16 @@
 		};
 		C252368C21B0F4B6005B29EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1CF4D423D7F5AC3B6013EBA /* Pods-ALMA3ROOF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Eber/Eber.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = G8U8Z43N83;
 				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Eber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -2666,15 +2619,16 @@
 		};
 		C252368D21B0F4B6005B29EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38ADDBE39A6AF9EE4A21C569 /* Pods-ALMA3ROOF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Eber/Eber.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = G8U8Z43N83;
 				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Eber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -2715,7 +2669,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E82219A92DD248E900BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+		E82219C62DD2574200BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
 			requirement = {
@@ -2726,19 +2680,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E82219AA2DD248E900BAD571 /* Sentry */ = {
+		E82219C72DD2574200BAD571 /* Sentry */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E82219A92DD248E900BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			package = E82219C62DD2574200BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = Sentry;
 		};
-		E82219AC2DD248E900BAD571 /* Sentry-Dynamic */ = {
+		E82219C92DD2574200BAD571 /* Sentry-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E82219A92DD248E900BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			package = E82219C62DD2574200BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = "Sentry-Dynamic";
 		};
-		E82219AE2DD248E900BAD571 /* SentrySwiftUI */ = {
+		E82219CB2DD2574200BAD571 /* SentrySwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E82219A92DD248E900BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			package = E82219C62DD2574200BAD571 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = SentrySwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

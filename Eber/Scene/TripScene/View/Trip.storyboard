@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mzp-AL-F6k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mzp-AL-F6k">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +26,7 @@
         <!--TripVC-->
         <scene sceneID="ook-A0-YlE">
             <objects>
-                <viewController id="Mzp-AL-F6k" customClass="TripVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mzp-AL-F6k" customClass="TripVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i6q-Qn-7lW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asset-menu_u" translatesAutoresizingMaskIntoConstraints="NO" id="Lib-Lr-5Kd">
-                                        <rect key="frame" x="20" y="22" width="25" height="26"/>
+                                        <rect key="frame" x="20" y="22" width="24" height="26"/>
                                         <color key="tintColor" red="0.098039215690000001" green="0.37647058820000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="jUQ-YN-G3v"/>
@@ -230,7 +230,7 @@
                                     <constraint firstAttribute="trailing" secondItem="eDs-Ha-hgo" secondAttribute="trailing" constant="20" id="vSU-dI-TVS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-R3-cct" userLabel="ViewForPayment">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-R3-cct" userLabel="ViewForPayment">
                                 <rect key="frame" x="20" y="210" width="210" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cUl-Wy-hjE">
@@ -957,7 +957,7 @@
         <!--Split PaymentVC-->
         <scene sceneID="lIa-H2-PF2">
             <objects>
-                <viewController storyboardIdentifier="SplitPaymentVC" id="vVN-BX-vu9" customClass="SplitPaymentVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplitPaymentVC" id="vVN-BX-vu9" customClass="SplitPaymentVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qac-Yq-brm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1005,7 +1005,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yi1-eg-xMI" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yi1-eg-xMI" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                         <rect key="frame" x="40" y="0.0" width="110" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1139,7 +1139,7 @@
         <!--InvoiceVC-->
         <scene sceneID="xQB-NA-fQV">
             <objects>
-                <viewController storyboardIdentifier="invoiceVC" automaticallyAdjustsScrollViewInsets="NO" id="wSE-tQ-43k" customClass="InvoiceVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="invoiceVC" automaticallyAdjustsScrollViewInsets="NO" id="wSE-tQ-43k" customClass="InvoiceVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="HEV-27-7qw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1154,7 +1154,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asset-menu_u" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-ll-Hih">
-                                                        <rect key="frame" x="0.0" y="2" width="25" height="26"/>
+                                                        <rect key="frame" x="0.0" y="2" width="24" height="26"/>
                                                         <color key="tintColor" red="0.098039215690000001" green="0.37647058820000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="26" id="CSB-Jv-HtF"/>
@@ -1269,6 +1269,7 @@
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="asset-card" translatesAutoresizingMaskIntoConstraints="NO" id="Ajx-UJ-eBF">
                                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                                         <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="Ajx-UJ-eBF" secondAttribute="height" multiplier="1:1" id="GPh-hc-469"/>
                                                                             <constraint firstAttribute="width" secondItem="Ajx-UJ-eBF" secondAttribute="height" multiplier="1:1" id="UIS-fk-JtN"/>
                                                                             <constraint firstAttribute="height" constant="45" id="yIy-sj-KdW"/>
                                                                         </constraints>
@@ -1279,9 +1280,6 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="Ajx-UJ-eBF" firstAttribute="width" secondItem="Ajx-UJ-eBF" secondAttribute="height" multiplier="1:1" id="GPh-hc-469"/>
-                                                                </constraints>
                                                                 <variation key="default">
                                                                     <mask key="subviews">
                                                                         <exclude reference="L4W-YW-trM"/>
@@ -1292,6 +1290,7 @@
                                                                 <rect key="frame" x="6.5" y="-47" width="80" height="80"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="lPf-ZF-d43" secondAttribute="height" multiplier="1:1" id="1M5-wp-MHg"/>
                                                                     <constraint firstAttribute="width" constant="80" id="NwP-6M-leb"/>
                                                                     <constraint firstAttribute="width" secondItem="lPf-ZF-d43" secondAttribute="height" multiplier="1:1" id="TxM-ux-L0U"/>
                                                                 </constraints>
@@ -1302,7 +1301,6 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstItem="lPf-ZF-d43" firstAttribute="width" secondItem="lPf-ZF-d43" secondAttribute="height" multiplier="1:1" id="1M5-wp-MHg"/>
                                                             <constraint firstAttribute="height" constant="60" id="M5y-lf-BFM"/>
                                                             <constraint firstItem="eGI-6Z-ODY" firstAttribute="centerY" secondItem="9Th-0a-MUT" secondAttribute="centerY" id="eai-vp-QLP"/>
                                                             <constraint firstItem="lPf-ZF-d43" firstAttribute="centerX" secondItem="L4W-YW-trM" secondAttribute="centerX" id="hXh-ra-8sH"/>
@@ -1339,6 +1337,8 @@
                                                                 <rect key="frame" x="7" y="-22" width="80" height="80"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="4eH-5o-EzB" secondAttribute="height" multiplier="1:1" id="BVH-e8-e0f"/>
+                                                                    <constraint firstAttribute="width" secondItem="4eH-5o-EzB" secondAttribute="height" multiplier="1:1" id="J8L-xz-NO2"/>
                                                                     <constraint firstAttribute="width" secondItem="4eH-5o-EzB" secondAttribute="height" multiplier="1:1" id="PGW-tP-udr"/>
                                                                     <constraint firstAttribute="width" constant="80" id="toI-Yb-di8"/>
                                                                 </constraints>
@@ -1350,8 +1350,6 @@
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="Grw-qJ-uQP" firstAttribute="centerX" secondItem="Qwt-xB-fdX" secondAttribute="centerX" id="06E-7y-ZyL"/>
-                                                            <constraint firstItem="4eH-5o-EzB" firstAttribute="width" secondItem="4eH-5o-EzB" secondAttribute="height" multiplier="1:1" id="BVH-e8-e0f"/>
-                                                            <constraint firstItem="4eH-5o-EzB" firstAttribute="width" secondItem="4eH-5o-EzB" secondAttribute="height" multiplier="1:1" id="J8L-xz-NO2"/>
                                                             <constraint firstItem="Grw-qJ-uQP" firstAttribute="centerY" secondItem="Qwt-xB-fdX" secondAttribute="centerY" id="JJP-kZ-IYG"/>
                                                         </constraints>
                                                         <variation key="default">
@@ -1414,7 +1412,7 @@
                                         <rect key="frame" x="20" y="75" width="280" height="171"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="section" id="74o-qB-ada" customClass="InvoiceSection" customModule="Eber" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="section" id="74o-qB-ada" customClass="InvoiceSection" customModule="ALMA3ROOF" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="280" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="74o-qB-ada" id="Shc-11-5yb">
@@ -1437,7 +1435,7 @@
                                                     <outlet property="lblSection" destination="vRK-li-0Gp" id="eFI-dn-uc2"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="44" id="TTb-A9-IqQ" customClass="InvoiceCell" customModule="Eber" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="44" id="TTb-A9-IqQ" customClass="InvoiceCell" customModule="ALMA3ROOF" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="94" width="280" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TTb-A9-IqQ" id="5ZA-IV-YY0">
@@ -1590,7 +1588,7 @@
         <!--FeedbackVC-->
         <scene sceneID="d3n-1l-pi7">
             <objects>
-                <viewController storyboardIdentifier="FeedbackVC" id="b2t-4C-tii" customClass="FeedbackVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedbackVC" id="b2t-4C-tii" customClass="FeedbackVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJf-fX-7Ug">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1676,7 +1674,7 @@
                                                     <constraint firstItem="JIq-xF-uVK" firstAttribute="width" secondItem="wki-CW-4zi" secondAttribute="width" id="jD3-rY-YYU"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSJ-6e-6cZ" customClass="RatingView" customModule="Eber" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSJ-6e-6cZ" customClass="RatingView" customModule="ALMA3ROOF" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="190" width="250" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -1720,6 +1718,8 @@
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="Ehu-ve-Ybe" secondAttribute="height" multiplier="1:1" id="59q-Dm-60k"/>
+                                                                            <constraint firstAttribute="width" secondItem="Ehu-ve-Ybe" secondAttribute="height" multiplier="1:1" id="e80-Q0-4Fp"/>
+                                                                            <constraint firstAttribute="width" secondItem="Ehu-ve-Ybe" secondAttribute="height" multiplier="1:1" id="gEz-w8-B6j"/>
                                                                             <constraint firstAttribute="width" constant="80" id="wf8-7k-oeE"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="eber" family="eber" pointSize="40"/>
@@ -1749,8 +1749,6 @@
                                                                     <constraint firstItem="QHF-sn-MKL" firstAttribute="centerY" secondItem="wXY-cL-qxG" secondAttribute="centerY" id="RxZ-S7-wry"/>
                                                                     <constraint firstItem="QHF-sn-MKL" firstAttribute="leading" secondItem="wXY-cL-qxG" secondAttribute="trailing" constant="10" id="XQj-Hf-jVX"/>
                                                                     <constraint firstItem="wXY-cL-qxG" firstAttribute="leading" secondItem="JUc-Q2-PAw" secondAttribute="leading" id="bvg-IK-Wjg"/>
-                                                                    <constraint firstItem="Ehu-ve-Ybe" firstAttribute="width" secondItem="Ehu-ve-Ybe" secondAttribute="height" multiplier="1:1" id="e80-Q0-4Fp"/>
-                                                                    <constraint firstItem="Ehu-ve-Ybe" firstAttribute="width" secondItem="Ehu-ve-Ybe" secondAttribute="height" multiplier="1:1" id="gEz-w8-B6j"/>
                                                                     <constraint firstAttribute="bottom" secondItem="wXY-cL-qxG" secondAttribute="bottom" constant="10" id="oUI-dg-TGN"/>
                                                                     <constraint firstItem="wXY-cL-qxG" firstAttribute="top" secondItem="JUc-Q2-PAw" secondAttribute="top" constant="10" id="soT-EE-MRz"/>
                                                                 </constraints>
@@ -1791,6 +1789,7 @@
                                                                         <rect key="frame" x="-20" y="-10" width="80" height="80"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="p9U-hf-Tzw" secondAttribute="height" multiplier="1:1" id="KYJ-mB-Tdr"/>
                                                                             <constraint firstAttribute="width" constant="80" id="SL8-Zg-iAC"/>
                                                                             <constraint firstAttribute="width" secondItem="p9U-hf-Tzw" secondAttribute="height" multiplier="1:1" id="l8T-d7-Sev"/>
                                                                         </constraints>
@@ -1803,7 +1802,6 @@
                                                                 <constraints>
                                                                     <constraint firstItem="eTm-mo-ydx" firstAttribute="top" secondItem="OoU-Oy-lnj" secondAttribute="top" constant="10" id="7gz-RV-a9e"/>
                                                                     <constraint firstItem="eTm-mo-ydx" firstAttribute="leading" secondItem="OoU-Oy-lnj" secondAttribute="leading" id="IfL-Bi-Rcp"/>
-                                                                    <constraint firstItem="p9U-hf-Tzw" firstAttribute="width" secondItem="p9U-hf-Tzw" secondAttribute="height" multiplier="1:1" id="KYJ-mB-Tdr"/>
                                                                     <constraint firstItem="uqf-DY-NMS" firstAttribute="centerY" secondItem="eTm-mo-ydx" secondAttribute="centerY" id="T6a-ti-d5T"/>
                                                                     <constraint firstItem="uqf-DY-NMS" firstAttribute="leading" secondItem="eTm-mo-ydx" secondAttribute="trailing" constant="10" id="cnv-LB-ue8"/>
                                                                     <constraint firstAttribute="bottom" secondItem="eTm-mo-ydx" secondAttribute="bottom" constant="10" id="gZV-Zf-cwk"/>
@@ -1894,7 +1892,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="Ud9-XG-S9U"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Custom Amount" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="FiG-kZ-4KB" customClass="ACFloatingTextfield" customModule="Eber" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Custom Amount" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="FiG-kZ-4KB" customClass="ACFloatingTextfield" customModule="ALMA3ROOF" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="85" width="260" height="50"/>
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -2010,7 +2008,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asset-menu_u" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-L6-ajQ">
-                                                        <rect key="frame" x="0.0" y="2" width="25" height="26"/>
+                                                        <rect key="frame" x="0.0" y="2" width="24" height="26"/>
                                                         <color key="tintColor" red="0.098039215690000001" green="0.37647058820000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="26" id="CWz-8Q-fFZ"/>
@@ -2159,7 +2157,7 @@
         <!--My Custom ChatVC-->
         <scene sceneID="9Pg-yF-Bg3">
             <objects>
-                <viewController storyboardIdentifier="chatVC" id="IiG-uP-Xm0" customClass="MyCustomChatVC" customModule="Eber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatVC" id="IiG-uP-Xm0" customClass="MyCustomChatVC" customModule="ALMA3ROOF" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QXN-I2-LG4"/>
                         <viewControllerLayoutGuide type="bottom" id="SsG-mF-4TK"/>
@@ -2172,7 +2170,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="444"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="senderCell" rowHeight="90" id="H0u-1x-1VA" customClass="SenderCell" customModule="Eber" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="senderCell" rowHeight="90" id="H0u-1x-1VA" customClass="SenderCell" customModule="ALMA3ROOF" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H0u-1x-1VA" id="ByE-lR-ljN">
@@ -2234,7 +2232,7 @@
                                             <outlet property="viewForMessage" destination="JKU-iU-7fQ" id="3BJ-ra-kji"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reciverCell" rowHeight="90" id="h3y-hN-o2c" customClass="ReciverCell" customModule="Eber" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reciverCell" rowHeight="90" id="h3y-hN-o2c" customClass="ReciverCell" customModule="ALMA3ROOF" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h3y-hN-o2c" id="aJh-ZJ-JBt">
@@ -2391,15 +2389,13 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="Wtp-eA-Cha"/>
                                                     <constraint firstAttribute="width" secondItem="Ye3-6d-r5q" secondAttribute="height" multiplier="1:1" id="gwP-ZF-S0Y"/>
+                                                    <constraint firstAttribute="width" secondItem="Ye3-6d-r5q" secondAttribute="height" multiplier="1:1" id="mnC-NI-6jy"/>
                                                 </constraints>
                                                 <connections>
                                                     <action selector="onClickBtnMenu:" destination="IiG-uP-Xm0" eventType="touchUpInside" id="CqB-fo-9Xb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Ye3-6d-r5q" firstAttribute="width" secondItem="Ye3-6d-r5q" secondAttribute="height" multiplier="1:1" id="mnC-NI-6jy"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="mg1-LC-3Hb"/>
@@ -2447,14 +2443,6 @@
             <point key="canvasLocation" x="1551" y="97"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="FiG-kZ-4KB">
-            <size key="intrinsicContentSize" width="179" height="22.5"/>
-        </designable>
-        <designable name="Yi1-eg-xMI">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-    </designables>
     <resources>
         <image name="asset-back" width="23" height="16"/>
         <image name="asset-call" width="25.5" height="25.5"/>
@@ -2462,8 +2450,8 @@
         <image name="asset-chat" width="37" height="37"/>
         <image name="asset-distance" width="45.5" height="45.5"/>
         <image name="asset-eta" width="27.5" height="27.5"/>
-        <image name="asset-menu-heart_tint" width="79" height="79"/>
-        <image name="asset-menu_u" width="25" height="17.5"/>
+        <image name="asset-menu-heart_tint" width="256" height="256"/>
+        <image name="asset-menu_u" width="24" height="24"/>
         <image name="asset-my-location_u" width="36" height="36"/>
         <image name="asset-pin-destination-location" width="22.5" height="22.5"/>
         <image name="asset-pin-pickup-location" width="23.5" height="23.5"/>
@@ -2478,7 +2466,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

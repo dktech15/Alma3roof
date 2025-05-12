@@ -106,3 +106,5 @@ iOSInjectionProject/
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
 !*.xcworkspace/xcshareddata/
+
+.sentryclirc
