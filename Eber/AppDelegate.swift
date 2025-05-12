@@ -107,7 +107,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
             is_app_in_review = true
         }
         SentrySDK.start { options in
-                    options.dsn = "  https://2d5965bcfed1651d5d0ffbe1082e4aa3@o4509287234273280.ingest.de.sentry.io/4509287263305808"
+                    options.dsn = "  https://1223276ae0ae782d3239b0411d7e3cbc@o4509287234273280.ingest.de.sentry.io/4509287263305808"
                     options.debug = true // Useful for development
                     options.tracesSampleRate = 1.0 // 100% performance tracing (adjust in prod)
                 }
