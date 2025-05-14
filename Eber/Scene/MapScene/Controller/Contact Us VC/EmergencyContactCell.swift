@@ -11,6 +11,7 @@ import UIKit
 class EmergencyContactCell: UITableViewCell
 {
 
+    @IBOutlet weak var viewSettings: UIView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var btnDelete: UIButton!
     @IBOutlet weak var imgDelete: UIImageView!
@@ -26,7 +27,7 @@ class EmergencyContactCell: UITableViewCell
     }
     
     override func awakeFromNib() {
-        
+        viewSettings.layer.cornerRadius = 8
         super.awakeFromNib()
         // Initialization code
         selectionStyle = UITableViewCell.SelectionStyle.none

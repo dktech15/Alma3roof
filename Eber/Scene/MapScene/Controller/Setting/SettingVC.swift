@@ -62,6 +62,11 @@ class SettingVC: BaseVC
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewForLanguage.layer.cornerRadius = 8
+        viewForNotifiationSound.layer.cornerRadius = 8
+        viewForPushNotifiationSound.layer.cornerRadius = 8
+        viewForArrivedNotifiationSound.layer.cornerRadius = 8
+        viewForConfirmationCodeToggle.layer.cornerRadius = 8
         setLocalization()
         lblLanguageMessage.text = LocalizeLanguage.currentAppleLanguageFull()
         self.wsGetEmergencyContactList()
@@ -118,7 +123,6 @@ class SettingVC: BaseVC
     }
 
     func setLocalization() {
-        viewForLanguage.backgroundColor = UIColor.themeViewBackgroundColor
         
         lblTitle.text = "TXT_SETTINGS".localizedCapitalized
         lblTitle.font = FontHelper.font(size: FontSize.medium
@@ -273,6 +277,7 @@ extension SettingVC : UITableViewDataSource,UITableViewDelegate
             cell.swForShareDetail.tag = indexPath.row
             cell.swForShareDetail.addTarget(self, action: #selector(self.updateContact(sender:)), for: .valueChanged)
             cell.btnDelete.addTarget(self, action: #selector(self.deleteContact(sender:)), for: .touchUpInside)
+            cell.contentView.layer.cornerRadius = 8
             return cell
         }
         return UITableViewCell.init()
